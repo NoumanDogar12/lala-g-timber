@@ -28,9 +28,10 @@ export default function BlogPage() {
       <JsonLd data={breadcrumbSchema} />
       <Breadcrumbs />
 
-      <section className="py-12 lg:py-16 bg-bg">
+      <section className="py-20 lg:py-28 bg-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Insights</p>
             <h1 className="font-heading text-3xl lg:text-5xl font-bold text-wood mb-4">
               Timber &amp; Construction Blog
             </h1>

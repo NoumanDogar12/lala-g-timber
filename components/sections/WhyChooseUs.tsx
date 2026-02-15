@@ -43,10 +43,13 @@ const reasons = [
 
 export function WhyChooseUs() {
   return (
-    <section className="py-16 lg:py-20 bg-white">
+    <section className="py-20 lg:py-28 bg-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="font-heading text-3xl lg:text-4xl font-bold text-wood mb-3">
+        <div className="text-center mb-16">
+          <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">
+            Why Us
+          </p>
+          <h2 className="font-heading text-3xl lg:text-5xl font-bold text-wood mb-4">
             Why Choose Lala G?
           </h2>
           <p className="text-text-muted text-lg max-w-xl mx-auto">
@@ -54,10 +57,13 @@ export function WhyChooseUs() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {reasons.map((reason) => (
-            <div key={reason.title} className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-cream rounded-lg text-wood mb-4">
+            <div
+              key={reason.title}
+              className="group p-6 rounded-2xl border border-cream-dark/30 bg-white hover:border-gold/30 transition-all duration-300 card-hover"
+            >
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-wood-warm to-wood flex items-center justify-center text-gold-light mb-5 group-hover:scale-105 transition-transform duration-300">
                 {reason.icon}
               </div>
               <h3 className="font-heading text-lg font-semibold text-wood mb-2">

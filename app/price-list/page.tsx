@@ -65,9 +65,10 @@ export default function PriceListPage() {
       <JsonLd data={breadcrumbSchema} />
       <Breadcrumbs />
 
-      <section className="py-12 lg:py-16 bg-bg">
+      <section className="py-20 lg:py-28 bg-bg">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
+            <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Rates</p>
             <h1 className="font-heading text-3xl lg:text-5xl font-bold text-wood mb-4">
               Price List
             </h1>
@@ -88,13 +89,13 @@ export default function PriceListPage() {
           {/* Price Tables */}
           <div className="space-y-8">
             {priceCategories.map((category) => (
-              <div key={category.title} className="bg-white rounded-xl border border-cream overflow-hidden">
-                <div className="bg-wood px-6 py-3">
+              <div key={category.title} className="bg-white rounded-xl border border-black/[0.06] overflow-hidden">
+                <div className="bg-gradient-to-r from-wood to-wood-light px-6 py-3">
                   <h2 className="font-heading text-lg font-semibold text-white">
                     {category.title}
                   </h2>
                 </div>
-                <div className="divide-y divide-cream">
+                <div className="divide-y divide-black/[0.04]">
                   {category.items.map((item) => (
                     <div key={item.name} className="flex items-center justify-between px-6 py-3">
                       <div>
@@ -115,7 +116,7 @@ export default function PriceListPage() {
           </div>
 
           {/* Note */}
-          <div className="mt-8 bg-cream/50 rounded-xl p-6 text-center">
+          <div className="mt-8 bg-bg rounded-xl p-6 text-center border border-black/[0.06]">
             <p className="text-sm text-text-muted">
               Prices are subject to change without notice based on market conditions.
               For the most accurate pricing, please contact us directly.

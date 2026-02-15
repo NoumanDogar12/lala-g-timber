@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { BUSINESS } from '@/lib/constants'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { HeroSection } from '@/components/sections/HeroSection'
@@ -65,8 +66,19 @@ export default function Home() {
       <ProductCategories />
 
       {/* Stats Section */}
-      <section className="py-16 lg:py-20 bg-cream">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 lg:py-28 overflow-hidden">
+        <Image
+          src="/images/hero-bg.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+          quality={80}
+        />
+        <div className="absolute inset-0 bg-bark/75" />
+        <div className="absolute inset-0 bg-gradient-to-br from-wood-warm/20 via-transparent to-wood/20" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-gold/[0.06] blur-[100px]" />
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <StatsCounter />
         </div>
       </section>

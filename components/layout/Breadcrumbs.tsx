@@ -34,7 +34,7 @@ export function Breadcrumbs() {
   })
 
   return (
-    <nav aria-label="Breadcrumb" className="bg-cream/50 border-b border-cream">
+    <nav aria-label="Breadcrumb" className="border-b border-black/[0.04] bg-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
         <ol className="flex flex-wrap items-center gap-1.5 text-sm text-text-muted">
           <li>
@@ -44,7 +44,7 @@ export function Breadcrumbs() {
           </li>
           {crumbs.map((crumb, index) => (
             <li key={crumb.href} className="flex items-center gap-1.5">
-              <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <svg className="w-3 h-3 opacity-30" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
               {index === crumbs.length - 1 ? (

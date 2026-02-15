@@ -1,31 +1,53 @@
+import Image from 'next/image'
 import { BUSINESS, getWhatsAppUrl } from '@/lib/constants'
 import { TrustBadge } from '@/components/ui/TrustBadge'
 import { Button } from '@/components/ui/Button'
 
 export function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-cream via-cream to-gold-light/20 py-16 lg:py-24 overflow-hidden">
-      {/* Decorative wood grain pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-[repeating-linear-gradient(90deg,transparent,transparent_40px,rgba(59,35,20,0.1)_40px,rgba(59,35,20,0.1)_41px)]" />
-      </div>
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Background image */}
+      <Image
+        src="/images/hero-bg.jpg"
+        alt="Stacked timber logs"
+        fill
+        priority
+        className="object-cover"
+        sizes="100vw"
+        quality={85}
+      />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto">
-          <TrustBadge />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-bark/70" />
 
-          <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-wood mt-6 mb-6 leading-tight">
-            Premium Timber, Plywood &amp; Shuttering Material in Lahore
+      {/* Warm gradient overlay — adds color depth */}
+      <div className="absolute inset-0 bg-gradient-to-b from-bark/60 via-wood/40 to-bark/80" />
+
+      {/* Warm golden glow orbs */}
+      <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] rounded-full bg-gold/[0.08] blur-[120px] animate-float-slow" />
+      <div className="absolute bottom-1/4 -left-32 w-[400px] h-[400px] rounded-full bg-gold-light/[0.06] blur-[100px] animate-float" />
+
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-0 w-full">
+        <div className="max-w-3xl mx-auto text-center lg:text-left lg:mx-0">
+          <div className="animate-fade-up">
+            <TrustBadge />
+          </div>
+
+          <h1 className="animate-fade-up [animation-delay:200ms] font-heading text-4xl sm:text-5xl lg:text-7xl font-bold text-white mt-8 mb-6 leading-[1.08] tracking-tight">
+            Premium Timber &amp;{' '}
+            <span className="text-gold-light">Plywood</span>{' '}
+            in Lahore
           </h1>
 
-          <p className="text-text-muted text-lg lg:text-xl max-w-2xl mx-auto mb-8 leading-relaxed">
+          <p className="animate-fade-up [animation-delay:400ms] text-cream/80 text-lg lg:text-xl max-w-xl mb-10 leading-relaxed mx-auto lg:mx-0">
             Lahore&apos;s most trusted timber supplier for {BUSINESS.yearsInBusiness}+ years.
-            Quality construction wood, marine plywood, shuttering plywood &amp; more at
+            Quality construction wood, marine plywood &amp; shuttering material at
             competitive rates.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button href={`tel:${BUSINESS.phone}`} variant="primary">
+          <div className="animate-fade-up [animation-delay:600ms] flex flex-col sm:flex-row items-center lg:items-start gap-4">
+            <Button href={`tel:${BUSINESS.phone}`} variant="gold">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                 <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
               </svg>
@@ -42,14 +64,16 @@ export function HeroSection() {
             </Button>
           </div>
 
-          <p className="mt-4 text-sm text-text-muted">
-            <a href={`tel:${BUSINESS.phone}`} className="font-medium text-wood hover:text-gold-dark transition-colors">
+          <div className="animate-fade-up [animation-delay:800ms] mt-8 flex items-center justify-center lg:justify-start gap-4 text-sm">
+            <a href={`tel:${BUSINESS.phone}`} className="font-medium text-cream hover:text-gold-light transition-colors">
               {BUSINESS.phoneDisplay}
             </a>
-            {' '}&middot; Mon–Sat, {BUSINESS.hours.opens} – {BUSINESS.hours.closes}
-          </p>
+            <span className="w-1 h-1 rounded-full bg-gold-light/40" />
+            <span className="text-cream/60">Mon&ndash;Sat, {BUSINESS.hours.opens} &ndash; {BUSINESS.hours.closes}</span>
+          </div>
         </div>
       </div>
+
     </section>
   )
 }

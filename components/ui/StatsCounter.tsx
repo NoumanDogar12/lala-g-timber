@@ -42,11 +42,11 @@ export function StatsCounter() {
   return (
     <div
       ref={ref}
-      className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"
+      className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12"
     >
       {stats.map((stat) => (
         <div key={stat.label} className="text-center">
-          <p className="font-heading text-3xl lg:text-4xl font-bold text-wood">
+          <p className="font-heading text-4xl lg:text-5xl font-bold text-gold-light">
             {visible ? (
               <>
                 {formatNumber(stat.value)}
@@ -56,7 +56,7 @@ export function StatsCounter() {
               '0'
             )}
           </p>
-          <p className="text-text-muted text-sm mt-1">{stat.label}</p>
+          <p className="text-cream-dark/70 text-sm mt-2">{stat.label}</p>
         </div>
       ))}
     </div>

@@ -1,17 +1,24 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-wood: #3B2314;
-  --color-wood-light: #5C3A1E;
-  --color-gold: #8B6914;
-  --color-gold-dark: #6B5310;
-  --color-gold-light: #D4A843;
-  --color-cream: #F5E6D3;
-  --color-bg: #FAFAF5;
-  --color-text: #1A1A1A;
-  --color-text-muted: #6B6B6B;
+  /* ── Warm Wood Palette (from reference) ────── */
+  --color-wood: #3D2518;
+  --color-wood-light: #644031;
+  --color-wood-medium: #745140;
+  --color-wood-warm: #6D3F20;
+  --color-gold: #B1744B;
+  --color-gold-dark: #8B5E3C;
+  --color-gold-light: #C29378;
+  --color-cream: #F5EBE0;
+  --color-cream-dark: #E8D5C4;
+  --color-bark: #211312;
+  --color-sawdust: #FFF8F0;
+  --color-bg: #FDFAF7;
+  --color-text: #2D1F15;
+  --color-text-muted: #8B7355;
   --color-white: #FFFFFF;
   --color-green-wa: #25D366;
+  --color-ring: #B1744B;
 
   --font-heading: var(--font-playfair);
   --font-body: var(--font-inter);
@@ -27,23 +34,130 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading), Georgia, serif;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Focus styles for accessibility */
 :focus-visible {
   outline: 2px solid var(--color-gold);
   outline-offset: 2px;
 }
 
-/* Reduced motion */
+/* ── Fade-up entrance animation ─────────────── */
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  opacity: 0;
+  animation: fade-up 0.8s ease-out forwards;
+}
+
+/* ── Floating animation ─────────────────────── */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(2deg); }
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+/* ── Pulse glow ─────────────────────────────── */
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* ── Glass effects ──────────────────────────── */
+
+.glass {
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+.glass-dark {
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(24px) saturate(200%);
+  background: rgba(33, 19, 18, 0.92);
+}
+
+/* ── Gradient text ──────────────────────────── */
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Wood grain texture overlay ─────────────── */
+
+.wood-texture {
+  position: relative;
+}
+
+.wood-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -30deg,
+    transparent,
+    transparent 40px,
+    rgba(255,255,255,0.04) 40px,
+    rgba(255,255,255,0.04) 41px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ── Card hover lift ────────────────────────── */
+
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  box-shadow:
+    0 20px 40px -12px rgba(61, 37, 24, 0.12),
+    0 0 0 1px rgba(177, 116, 75, 0.08);
+  transform: translateY(-4px);
+}
+
+/* ── Reduced motion ─────────────────────────── */
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+  .animate-fade-up {
+    opacity: 1;
   }
 }

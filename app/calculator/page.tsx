@@ -41,9 +41,10 @@ export default function CalculatorPage() {
       <JsonLd data={howToSchema} />
       <Breadcrumbs />
 
-      <section className="py-12 lg:py-16 bg-bg">
+      <section className="py-20 lg:py-28 bg-bg">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
+            <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Free Tool</p>
             <h1 className="font-heading text-3xl lg:text-5xl font-bold text-wood mb-4">
               Construction Material Calculator
             </h1>
@@ -56,7 +57,7 @@ export default function CalculatorPage() {
           <CalculatorForm />
 
           {/* How It Works */}
-          <div className="mt-12 bg-white rounded-xl border border-cream p-6 lg:p-8">
+          <div className="mt-12 bg-white rounded-xl border border-black/[0.06] p-6 lg:p-8">
             <h2 className="font-heading text-xl font-semibold text-wood mb-4">
               How It Works
             </h2>

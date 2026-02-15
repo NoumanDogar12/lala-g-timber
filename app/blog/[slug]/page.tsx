@@ -80,7 +80,7 @@ export default async function BlogPostPage({
           {/* Header */}
           <header className="mb-8">
             <div className="flex items-center gap-2 text-sm text-text-muted mb-3">
-              <span className="bg-cream text-wood px-2.5 py-0.5 rounded-full text-xs font-medium">
+              <span className="bg-bg text-wood px-2.5 py-0.5 rounded-full text-xs font-medium border border-black/[0.04]">
                 {post.category}
               </span>
               <time dateTime={post.date}>
@@ -124,7 +124,7 @@ export default async function BlogPostPage({
 
                 return (
                   <div key={i} className="overflow-x-auto my-4">
-                    <table className="w-full text-sm border-collapse border border-cream rounded-lg overflow-hidden">
+                    <table className="w-full text-sm border-collapse border border-black/[0.06] rounded-lg overflow-hidden">
                       <thead>
                         <tr className="bg-wood text-white">
                           {headers.map((h) => (

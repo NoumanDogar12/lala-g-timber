@@ -47,12 +47,15 @@ export default function AboutPage() {
       <Breadcrumbs />
 
       {/* Hero */}
-      <section className="py-12 lg:py-16 bg-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-heading text-3xl lg:text-5xl font-bold text-wood mb-4">
+      <section className="relative py-16 lg:py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-wood via-wood-light to-wood-medium" />
+        <div className="absolute top-1/2 right-0 w-[400px] h-[400px] rounded-full bg-gold/[0.06] blur-[80px]" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Our Story</p>
+          <h1 className="font-heading text-3xl lg:text-5xl font-bold text-white mb-4">
             About Lala G Timber Merchants
           </h1>
-          <p className="text-text-muted text-lg max-w-3xl">
+          <p className="text-white/60 text-lg max-w-3xl">
             Lahore&apos;s trusted timber and plywood supplier for over three decades.
             Quality materials, fair prices, and reliable service since day one.
           </p>
@@ -60,7 +63,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story */}
-      <section className="py-12 lg:py-16 bg-bg">
+      <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading text-2xl lg:text-3xl font-bold text-wood mb-6">
             Our Story
@@ -87,14 +90,15 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-12 lg:py-16 bg-white">
+      <section className="py-20 lg:py-28 bg-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3 text-center">What We Stand For</p>
           <h2 className="font-heading text-2xl lg:text-3xl font-bold text-wood mb-8 text-center">
             Our Values
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value) => (
-              <div key={value.title} className="bg-bg rounded-xl p-6 text-center">
+              <div key={value.title} className="bg-white rounded-2xl border border-cream-dark/30 p-6 text-center card-hover">
                 <h3 className="font-heading text-lg font-semibold text-wood mb-2">
                   {value.title}
                 </h3>
@@ -108,7 +112,7 @@ export default function AboutPage() {
       </section>
 
       {/* Location */}
-      <section className="py-12 lg:py-16 bg-bg">
+      <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-heading text-2xl lg:text-3xl font-bold text-wood mb-4">
             Visit Our Store

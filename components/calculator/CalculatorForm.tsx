@@ -50,7 +50,7 @@ export function CalculatorForm() {
 
   return (
     <div className="space-y-8">
-      <form onSubmit={handleCalculate} className="bg-white rounded-xl border border-cream p-6 lg:p-8">
+      <form onSubmit={handleCalculate} className="bg-white rounded-xl border border-black/[0.08] p-6 lg:p-8">
         {/* Project Type */}
         <div className="mb-6">
           <label className="block text-sm font-semibold text-wood mb-3">
@@ -92,7 +92,7 @@ export function CalculatorForm() {
               min="0.1"
               step="0.1"
               required
-              className="w-full px-4 py-2.5 rounded-lg border border-cream bg-white text-text text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
+              className="w-full px-4 py-2.5 rounded-lg border border-black/[0.08] bg-white text-text text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
               placeholder="e.g., 20"
             />
           </div>
@@ -108,7 +108,7 @@ export function CalculatorForm() {
               min="0.1"
               step="0.1"
               required
-              className="w-full px-4 py-2.5 rounded-lg border border-cream bg-white text-text text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
+              className="w-full px-4 py-2.5 rounded-lg border border-black/[0.08] bg-white text-text text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
               placeholder="e.g., 15"
             />
           </div>
@@ -125,7 +125,7 @@ export function CalculatorForm() {
                 min="0.1"
                 step="0.1"
                 required
-                className="w-full px-4 py-2.5 rounded-lg border border-cream bg-white text-text text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
+                className="w-full px-4 py-2.5 rounded-lg border border-black/[0.08] bg-white text-text text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
                 placeholder="e.g., 10"
               />
             </div>

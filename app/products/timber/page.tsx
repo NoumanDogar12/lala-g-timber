@@ -74,17 +74,20 @@ export default function TimberPage() {
       <Breadcrumbs />
 
       {/* Hero */}
-      <section className="py-12 lg:py-16 bg-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-heading text-3xl lg:text-5xl font-bold text-wood mb-4">
+      <section className="relative py-16 lg:py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-wood via-wood-light to-wood-medium" />
+        <div className="absolute top-1/2 right-0 w-[400px] h-[400px] rounded-full bg-gold/[0.06] blur-[80px]" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Premium Wood</p>
+          <h1 className="font-heading text-3xl lg:text-5xl font-bold text-white mb-4">
             Premium Timber in Lahore
           </h1>
-          <p className="text-text-muted text-lg max-w-3xl mb-6">
+          <p className="text-white/60 text-lg max-w-3xl mb-6">
             We supply A-grade and B-grade timber for construction, furniture, and interior
             work. Teak, Sal, Deodar, Pine, and Sheesham available in all standard dimensions.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Button href={`tel:${BUSINESS.phone}`} variant="primary">
+            <Button href={`tel:${BUSINESS.phone}`} variant="gold">
               Call for Rates
             </Button>
             <Button href={getWhatsAppUrl('Hi, I need timber. What types and rates do you have?')} variant="outline">
@@ -95,7 +98,7 @@ export default function TimberPage() {
       </section>
 
       {/* Timber Types */}
-      <section className="py-12 lg:py-16 bg-bg">
+      <section className="py-20 lg:py-28 bg-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading text-2xl lg:text-3xl font-bold text-wood mb-8">
             Timber Types We Supply
@@ -103,7 +106,7 @@ export default function TimberPage() {
 
           <div className="space-y-8">
             {timberTypes.map((timber) => (
-              <div key={timber.name} className="bg-white rounded-xl border border-cream p-6 lg:p-8">
+              <div key={timber.name} className="bg-white rounded-2xl border border-cream-dark/30 p-6 lg:p-8 card-hover">
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-3">
@@ -148,14 +151,15 @@ export default function TimberPage() {
       </section>
 
       {/* FAQs */}
-      <section className="py-12 lg:py-16 bg-white">
+      <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">FAQ</p>
           <h2 className="font-heading text-2xl lg:text-3xl font-bold text-wood mb-8">
             Frequently Asked Questions — Timber
           </h2>
           <div className="space-y-4">
             {timberFaqs.map((faq) => (
-              <details key={faq.question} className="group bg-bg rounded-lg border border-cream">
+              <details key={faq.question} className="group bg-bg rounded-lg border border-black/[0.06]">
                 <summary className="flex items-center justify-between cursor-pointer p-4 text-sm font-medium text-wood">
                   {faq.question}
                   <svg className="w-4 h-4 shrink-0 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

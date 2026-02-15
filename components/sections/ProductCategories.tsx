@@ -3,10 +3,13 @@ import { ProductCard } from '@/components/ui/ProductCard'
 
 export function ProductCategories() {
   return (
-    <section className="py-16 lg:py-20 bg-bg">
+    <section className="py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="font-heading text-3xl lg:text-4xl font-bold text-wood mb-3">
+        <div className="text-center mb-16">
+          <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">
+            What We Offer
+          </p>
+          <h2 className="font-heading text-3xl lg:text-5xl font-bold text-wood mb-4">
             Our Products
           </h2>
           <p className="text-text-muted text-lg max-w-xl mx-auto">

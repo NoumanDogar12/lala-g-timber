@@ -66,9 +66,10 @@ export default function ProjectsPage() {
       <JsonLd data={breadcrumbSchema} />
       <Breadcrumbs />
 
-      <section className="py-12 lg:py-16 bg-bg">
+      <section className="py-20 lg:py-28 bg-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Portfolio</p>
             <h1 className="font-heading text-3xl lg:text-5xl font-bold text-wood mb-4">
               Our Projects
             </h1>
@@ -80,11 +81,18 @@ export default function ProjectsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project) => (
-              <div key={project.title} className="bg-white rounded-xl border border-cream overflow-hidden shadow-sm">
-                <div className="h-40 bg-gradient-to-br from-wood/10 to-cream flex items-center justify-center">
-                  <span className="text-xs font-semibold text-wood/40 uppercase tracking-wider">
+              <div key={project.title} className="bg-white rounded-xl border border-black/[0.06] overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div className="relative h-40 bg-gradient-to-br from-wood via-wood-light to-wood-medium flex items-center justify-center overflow-hidden">
+                  <div className="absolute inset-0 opacity-10">
+                    <svg viewBox="0 0 200 200" className="w-full h-full text-cream">
+                      <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" strokeWidth="1" />
+                      <circle cx="100" cy="100" r="35" fill="none" stroke="currentColor" strokeWidth="0.75" />
+                    </svg>
+                  </div>
+                  <span className="relative text-xs font-semibold text-cream/50 uppercase tracking-wider">
                     {project.type}
                   </span>
+                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-gold-light to-transparent opacity-50" />
                 </div>
                 <div className="p-5">
                   <h2 className="font-heading text-lg font-semibold text-wood mb-2">
@@ -95,7 +103,7 @@ export default function ProjectsPage() {
                   </p>
                   <div className="flex flex-wrap gap-1.5">
                     {project.materials.map((material) => (
-                      <span key={material} className="text-xs bg-cream text-wood px-2 py-0.5 rounded-full">
+                      <span key={material} className="text-xs bg-bg text-text-muted px-2 py-0.5 rounded-full border border-black/[0.04]">
                         {material}
                       </span>
                     ))}

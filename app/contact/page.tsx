@@ -58,9 +58,10 @@ export default function ContactPage() {
       <JsonLd data={localBusinessSchema} />
       <Breadcrumbs />
 
-      <section className="py-12 lg:py-16 bg-bg">
+      <section className="py-20 lg:py-28 bg-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Get In Touch</p>
             <h1 className="font-heading text-3xl lg:text-5xl font-bold text-wood mb-4">
               Contact Us
             </h1>
@@ -72,7 +73,7 @@ export default function ContactPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Contact Form */}
-            <div className="bg-white rounded-xl border border-cream p-6 lg:p-8">
+            <div className="bg-white rounded-xl border border-black/[0.06] p-6 lg:p-8">
               <h2 className="font-heading text-xl font-semibold text-wood mb-6">
                 Send Us an Inquiry
               </h2>
@@ -82,7 +83,7 @@ export default function ContactPage() {
             {/* Contact Info */}
             <div className="space-y-6">
               {/* Phone */}
-              <div className="bg-white rounded-xl border border-cream p-6">
+              <div className="bg-white rounded-xl border border-black/[0.06] p-6">
                 <h3 className="font-heading text-lg font-semibold text-wood mb-3">
                   Call Us
                 </h3>
@@ -98,7 +99,7 @@ export default function ContactPage() {
               </div>
 
               {/* WhatsApp */}
-              <div className="bg-white rounded-xl border border-cream p-6">
+              <div className="bg-white rounded-xl border border-black/[0.06] p-6">
                 <h3 className="font-heading text-lg font-semibold text-wood mb-3">
                   WhatsApp
                 </h3>
@@ -119,7 +120,7 @@ export default function ContactPage() {
               </div>
 
               {/* Address */}
-              <div className="bg-white rounded-xl border border-cream p-6">
+              <div className="bg-white rounded-xl border border-black/[0.06] p-6">
                 <h3 className="font-heading text-lg font-semibold text-wood mb-3">
                   Visit Our Store
                 </h3>
@@ -137,7 +138,7 @@ export default function ContactPage() {
               </div>
 
               {/* Google Maps Embed */}
-              <div className="bg-white rounded-xl border border-cream overflow-hidden">
+              <div className="bg-white rounded-xl border border-black/[0.06] overflow-hidden">
                 <iframe
                   src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.5!2d${BUSINESS.geo.longitude}!3d${BUSINESS.geo.latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDM0JzE5LjIiTiA3NMKwMTgnMzQuMiJF!5e0!3m2!1sen!2spk!4v1234567890`}
                   width="100%"

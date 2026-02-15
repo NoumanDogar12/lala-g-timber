@@ -65,17 +65,20 @@ export default function PlywoodPage() {
       <Breadcrumbs />
 
       {/* Hero */}
-      <section className="py-12 lg:py-16 bg-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-heading text-3xl lg:text-5xl font-bold text-wood mb-4">
+      <section className="relative py-16 lg:py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-wood via-wood-light to-wood-medium" />
+        <div className="absolute top-1/2 right-0 w-[400px] h-[400px] rounded-full bg-gold/[0.06] blur-[80px]" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">All Grades</p>
+          <h1 className="font-heading text-3xl lg:text-5xl font-bold text-white mb-4">
             Plywood Supplier in Lahore
           </h1>
-          <p className="text-text-muted text-lg max-w-3xl mb-6">
+          <p className="text-white/60 text-lg max-w-3xl mb-6">
             Complete range of plywood for every application — Marine, BWR, Commercial,
             Shuttering, MDF, and Block Board. All thicknesses and sizes available.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Button href={`tel:${BUSINESS.phone}`} variant="primary">
+            <Button href={`tel:${BUSINESS.phone}`} variant="gold">
               Call for Rates
             </Button>
             <Button href={getWhatsAppUrl('Hi, I need plywood. Can you share types and rates?')} variant="outline">
@@ -86,7 +89,7 @@ export default function PlywoodPage() {
       </section>
 
       {/* Comparison Table */}
-      <section className="py-12 lg:py-16 bg-bg">
+      <section className="py-20 lg:py-28 bg-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading text-2xl lg:text-3xl font-bold text-wood mb-8">
             Plywood Types &amp; Comparison
@@ -94,7 +97,7 @@ export default function PlywoodPage() {
 
           {/* Desktop Table */}
           <div className="hidden lg:block overflow-x-auto">
-            <table className="w-full border-collapse bg-white rounded-xl border border-cream overflow-hidden">
+            <table className="w-full border-collapse bg-white rounded-xl border border-black/[0.06] overflow-hidden">
               <thead>
                 <tr className="bg-wood text-white">
                   <th className="text-left px-6 py-3 text-sm font-semibold">Type</th>
@@ -119,7 +122,7 @@ export default function PlywoodPage() {
           {/* Mobile Cards */}
           <div className="lg:hidden space-y-4">
             {plywoodTypes.map((ply) => (
-              <div key={ply.name} className="bg-white rounded-xl border border-cream p-5">
+              <div key={ply.name} className="bg-white rounded-xl border border-black/[0.06] p-5">
                 <h3 className="font-heading text-lg font-semibold text-wood mb-2">{ply.name}</h3>
                 <p className="text-text-muted text-sm mb-3">{ply.description}</p>
                 <div className="grid grid-cols-2 gap-2 text-xs">
@@ -143,14 +146,15 @@ export default function PlywoodPage() {
       </section>
 
       {/* FAQs */}
-      <section className="py-12 lg:py-16 bg-white">
+      <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">FAQ</p>
           <h2 className="font-heading text-2xl lg:text-3xl font-bold text-wood mb-8">
             Frequently Asked Questions — Plywood
           </h2>
           <div className="space-y-4">
             {plywoodFaqs.map((faq) => (
-              <details key={faq.question} className="group bg-bg rounded-lg border border-cream">
+              <details key={faq.question} className="group bg-bg rounded-lg border border-black/[0.06]">
                 <summary className="flex items-center justify-between cursor-pointer p-4 text-sm font-medium text-wood">
                   {faq.question}
                   <svg className="w-4 h-4 shrink-0 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

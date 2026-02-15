@@ -30,18 +30,21 @@ export default function DeliveryPage() {
       <Breadcrumbs />
 
       {/* Hero */}
-      <section className="py-12 lg:py-16 bg-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-heading text-3xl lg:text-5xl font-bold text-wood mb-4">
+      <section className="relative py-16 lg:py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-wood via-wood-light to-wood-medium" />
+        <div className="absolute top-1/2 right-0 w-[400px] h-[400px] rounded-full bg-gold/[0.06] blur-[80px]" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Logistics</p>
+          <h1 className="font-heading text-3xl lg:text-5xl font-bold text-white mb-4">
             Delivery Areas in Lahore
           </h1>
-          <p className="text-text-muted text-lg max-w-3xl mb-6">
+          <p className="text-white/60 text-lg max-w-3xl mb-6">
             We deliver timber, plywood, and shuttering material across 50+ areas in Lahore.
             Same-day delivery available for in-stock items. Bulk orders qualify for
             free delivery.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Button href={`tel:${BUSINESS.phone}`} variant="primary">
+            <Button href={`tel:${BUSINESS.phone}`} variant="gold">
               Call for Delivery Info
             </Button>
             <Button href={getWhatsAppUrl('Hi, I need delivery to [area]. Can you share delivery charges?')} variant="outline">
@@ -52,7 +55,7 @@ export default function DeliveryPage() {
       </section>
 
       {/* Delivery Areas Grid */}
-      <section className="py-12 lg:py-16 bg-bg">
+      <section className="py-20 lg:py-28 bg-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading text-2xl lg:text-3xl font-bold text-wood mb-8">
             Areas We Serve
@@ -60,7 +63,7 @@ export default function DeliveryPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {deliveryAreas.map((area) => (
-              <div key={area.name} className="bg-white rounded-xl border border-cream p-5">
+              <div key={area.name} className="bg-white rounded-xl border border-black/[0.06] p-5">
                 <h3 className="font-heading text-lg font-semibold text-wood mb-3">
                   {area.name}
                 </h3>
@@ -79,7 +82,7 @@ export default function DeliveryPage() {
           </div>
 
           {/* Delivery Info */}
-          <div className="mt-10 bg-white rounded-xl border border-cream p-6 lg:p-8">
+          <div className="mt-10 bg-white rounded-xl border border-black/[0.06] p-6 lg:p-8">
             <h2 className="font-heading text-xl font-semibold text-wood mb-4">
               Delivery Information
             </h2>

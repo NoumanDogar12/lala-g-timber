@@ -41,9 +41,10 @@ export default function FAQsPage() {
       <JsonLd data={faqSchema} />
       <Breadcrumbs />
 
-      <section className="py-12 lg:py-16 bg-bg">
+      <section className="py-20 lg:py-28 bg-bg">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
+            <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Support</p>
             <h1 className="font-heading text-3xl lg:text-5xl font-bold text-wood mb-4">
               Frequently Asked Questions
             </h1>
@@ -61,7 +62,7 @@ export default function FAQsPage() {
                 {faqs
                   .filter((faq) => faq.category === category)
                   .map((faq) => (
-                    <details key={faq.question} className="group bg-white rounded-lg border border-cream">
+                    <details key={faq.question} className="group bg-white rounded-lg border border-black/[0.06]">
                       <summary className="flex items-center justify-between cursor-pointer p-4 text-sm font-medium text-wood">
                         {faq.question}
                         <svg className="w-4 h-4 shrink-0 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

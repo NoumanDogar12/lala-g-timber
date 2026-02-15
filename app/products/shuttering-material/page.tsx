@@ -58,23 +58,26 @@ export default function ShutteringMaterialPage() {
       <Breadcrumbs />
 
       {/* Hero */}
-      <section className="py-12 lg:py-16 bg-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-heading text-3xl lg:text-5xl font-bold text-wood mb-4">
+      <section className="relative py-16 lg:py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-wood via-wood-light to-wood-medium" />
+        <div className="absolute top-1/2 right-0 w-[400px] h-[400px] rounded-full bg-gold/[0.06] blur-[80px]" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Construction</p>
+          <h1 className="font-heading text-3xl lg:text-5xl font-bold text-white mb-4">
             Shuttering Material in Lahore
           </h1>
-          <p className="text-text-muted text-lg max-w-3xl mb-6">
+          <p className="text-white/60 text-lg max-w-3xl mb-6">
             Complete shuttering solutions for construction projects — plywood sheets,
             steel props, centering plates, and all accessories. Bulk supply with site delivery.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Button href={`tel:${BUSINESS.phone}`} variant="primary">
+            <Button href={`tel:${BUSINESS.phone}`} variant="gold">
               Call for Bulk Rates
             </Button>
             <Button href={getWhatsAppUrl('Hi, I need shuttering material for a construction project. Can you share rates?')} variant="outline">
               WhatsApp for Prices
             </Button>
-            <Button href="/calculator" variant="secondary">
+            <Button href="/calculator" variant="outline">
               Material Calculator
             </Button>
           </div>
@@ -82,7 +85,7 @@ export default function ShutteringMaterialPage() {
       </section>
 
       {/* Products */}
-      <section className="py-12 lg:py-16 bg-bg">
+      <section className="py-20 lg:py-28 bg-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading text-2xl lg:text-3xl font-bold text-wood mb-8">
             Shuttering Products
@@ -90,7 +93,7 @@ export default function ShutteringMaterialPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {shutteringProducts.map((product) => (
-              <div key={product.name} className="bg-white rounded-xl border border-cream p-6">
+              <div key={product.name} className="bg-white rounded-xl border border-black/[0.06] p-6">
                 <div className="flex items-center gap-3 mb-3">
                   <h3 className="font-heading text-lg font-semibold text-wood">
                     {product.name}
@@ -118,8 +121,9 @@ export default function ShutteringMaterialPage() {
       </section>
 
       {/* How Shuttering Works */}
-      <section className="py-12 lg:py-16 bg-white">
+      <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">Process</p>
           <h2 className="font-heading text-2xl lg:text-3xl font-bold text-wood mb-6">
             How Shuttering Works
           </h2>
