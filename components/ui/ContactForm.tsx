@@ -44,16 +44,16 @@ export function ContactForm() {
     e.preventDefault()
     setStatus('sending')
 
-    const web3formsKey = process.env.NEXT_PUBLIC_WEB3FORMS_KEY
+    // Web3Forms access key (public, safe for client-side per Web3Forms docs)
+    const WEB3FORMS_KEY = '589d7ed7-080b-4ec5-8d9c-c899d8298c6f'
 
-    // Send email via Web3Forms if key is configured
-    if (web3formsKey && web3formsKey !== 'YOUR_ACCESS_KEY_HERE') {
+    {
       try {
         const res = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
           body: JSON.stringify({
-            access_key: web3formsKey,
+            access_key: WEB3FORMS_KEY,
             botcheck: '',
             subject: `New Inquiry - ${MATERIAL_LABELS[formData.material] || formData.material} | ${BUSINESS.name}`,
             from_name: formData.name,
