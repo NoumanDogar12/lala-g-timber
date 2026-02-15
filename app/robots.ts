@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://lalagtimbermerchant.com/sitemap.xml',
+    sitemap: 'https://lalagtimbermerchant.com.pk/sitemap.xml',
   }
 }

@@ -16,7 +16,7 @@ export const BUSINESS = {
     latitude: '31.5720',
     longitude: '74.3095',
   },
-  domain: 'https://lalagtimbermerchant.com',
+  domain: 'https://lalagtimbermerchant.com.pk',
   yearsInBusiness: 30,
   tagline: 'Your Trusted Timber Partner Since 30+ Years',
   hours: {
