@@ -1,32 +1,79 @@
 import { BUSINESS } from '@/lib/constants'
-import { Button } from '@/components/ui/Button'
+import { JsonLd } from '@/components/seo/JsonLd'
+import { HeroSection } from '@/components/sections/HeroSection'
+import { ProductCategories } from '@/components/sections/ProductCategories'
+import { WhyChooseUs } from '@/components/sections/WhyChooseUs'
+import { StatsCounter } from '@/components/ui/StatsCounter'
+import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
+import { CTASection } from '@/components/sections/CTASection'
 
 export default function Home() {
+  const homepageSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'LocalBusiness',
+        '@id': `${BUSINESS.domain}/#business`,
+        name: BUSINESS.name,
+        url: BUSINESS.domain,
+        telephone: BUSINESS.phone,
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: BUSINESS.address.street,
+          addressLocality: BUSINESS.address.city,
+          addressRegion: BUSINESS.address.state,
+          postalCode: BUSINESS.address.postalCode,
+          addressCountry: BUSINESS.address.country,
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: BUSINESS.geo.latitude,
+          longitude: BUSINESS.geo.longitude,
+        },
+        openingHoursSpecification: [
+          {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: [...BUSINESS.hours.days],
+            opens: BUSINESS.hours.opens,
+            closes: BUSINESS.hours.closes,
+          },
+        ],
+        priceRange: '$$',
+        description:
+          'Leading timber, plywood & shuttering material supplier in Lahore. 30+ years of trust. Construction wood, marine plywood, shuttering plywood & more.',
+      },
+      {
+        '@type': 'Organization',
+        '@id': `${BUSINESS.domain}/#organization`,
+        name: BUSINESS.name,
+        url: BUSINESS.domain,
+      },
+      {
+        '@type': 'WebSite',
+        '@id': `${BUSINESS.domain}/#website`,
+        url: BUSINESS.domain,
+        name: BUSINESS.name,
+        publisher: { '@id': `${BUSINESS.domain}/#organization` },
+      },
+    ],
+  }
+
   return (
     <>
-      {/* Hero Section - placeholder for full implementation */}
-      <section className="bg-cream py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-gold-dark font-semibold mb-3">
-            {BUSINESS.tagline}
-          </p>
-          <h1 className="font-heading text-4xl lg:text-6xl font-bold text-wood mb-6">
-            Premium Timber, Plywood &amp; Shuttering Material in Lahore
-          </h1>
-          <p className="text-text-muted text-lg max-w-2xl mx-auto mb-8">
-            Lahore&apos;s most trusted timber supplier for 30+ years. Quality construction wood,
-            marine plywood, shuttering plywood &amp; more. Call for today&apos;s best rates.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button href={`tel:${BUSINESS.phone}`} variant="primary">
-              Call for Rates
-            </Button>
-            <Button href="/products" variant="outline">
-              View Products
-            </Button>
-          </div>
+      <JsonLd data={homepageSchema} />
+      <HeroSection />
+      <ProductCategories />
+
+      {/* Stats Section */}
+      <section className="py-16 lg:py-20 bg-cream">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <StatsCounter />
         </div>
       </section>
+
+      <WhyChooseUs />
+      <TestimonialsSection />
+      <CTASection />
     </>
   )
 }
