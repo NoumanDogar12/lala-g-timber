@@ -1,5 +1,5 @@
 export const BUSINESS = {
-  name: 'Lala G Timber Merchants',
+  name: 'Lala G Timber Merchant',
   phone: '+923030877771',
   phoneDisplay: '+92 303 087 7771',
   whatsapp: '923030877771',
