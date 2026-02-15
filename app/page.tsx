@@ -41,7 +41,9 @@ export default function Home() {
         ],
         priceRange: '$$',
         description:
-          'Leading timber, plywood & shuttering material supplier in Lahore. 30+ years of trust. Construction wood, marine plywood, shuttering plywood & more.',
+          'Best timber, wood, plywood & shuttering material supplier in Lahore. 30+ years trusted wood merchant. Lakdi, phatta, ply, wali — all construction material. Teak, Deodar, Sheesham, marine plywood & more.',
+        keywords:
+          'timber, wood, plywood, ply, phatta, lakdi, wali, shuttering, construction material, best wood supplier, Lahore timber merchants, timber market Ravi Road',
       },
       {
         '@type': 'Organization',

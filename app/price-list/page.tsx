@@ -7,9 +7,9 @@ import { JsonLd } from '@/components/seo/JsonLd'
 import { Button } from '@/components/ui/Button'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Timber & Plywood Price List in Lahore — Call for Today\'s Rates',
+  title: 'Timber, Wood & Plywood Price List Lahore — Today\'s Best Rates',
   description:
-    'Get today\'s timber, plywood, and shuttering material prices in Lahore. Rates updated daily. Call +92 303 087 7771 or WhatsApp for the latest price list.',
+    'Get today\'s timber, wood, plywood, ply, phatta & shuttering material prices in Lahore. Lakdi rates updated daily. Best construction material prices. Call +92 303 087 7771 or WhatsApp.',
   path: '/price-list',
 })
 

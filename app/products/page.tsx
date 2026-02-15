@@ -8,9 +8,9 @@ import { JsonLd } from '@/components/seo/JsonLd'
 import { BUSINESS } from '@/lib/constants'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Timber, Plywood & Shuttering Material — Products',
+  title: 'Timber, Plywood, Wood & Shuttering Material — Construction Products in Lahore',
   description:
-    'Browse our complete range of timber, plywood, and shuttering material. Premium quality construction wood, marine plywood, BWR plywood, shuttering ply, and accessories in Lahore.',
+    'Browse our complete range of timber, plywood, wood, and shuttering material in Lahore. Lakdi, phatta, ply, wali — all construction material available. Marine plywood, BWR plywood, Teak, Deodar & more from best wood supplier.',
   path: '/products',
 })
 

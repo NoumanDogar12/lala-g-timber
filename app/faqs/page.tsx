@@ -7,9 +7,9 @@ import { CTASection } from '@/components/sections/CTASection'
 import { JsonLd } from '@/components/seo/JsonLd'
 
 export const metadata: Metadata = createMetadata({
-  title: 'FAQs — Timber, Plywood & Shuttering Material Questions',
+  title: 'FAQs — Timber, Wood, Plywood & Construction Material Questions Lahore',
   description:
-    'Frequently asked questions about timber, plywood, shuttering material, prices, delivery, and more. Get answers about building materials in Lahore.',
+    'Frequently asked questions about timber, wood, plywood, ply, shuttering material, construction supplies, prices & delivery in Lahore. Best wood supplier answers your questions.',
   path: '/faqs',
 })
 

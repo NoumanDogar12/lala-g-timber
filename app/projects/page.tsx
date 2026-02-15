@@ -6,9 +6,9 @@ import { CTASection } from '@/components/sections/CTASection'
 import { JsonLd } from '@/components/seo/JsonLd'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Our Projects — Timber & Construction Work in Lahore',
+  title: 'Our Projects — Timber, Wood & Construction Work in Lahore',
   description:
-    'View projects completed using timber, plywood, and shuttering material from Lala G Timber Merchants. Residential, commercial, and industrial projects in Lahore.',
+    'View construction projects completed using timber, wood, plywood & shuttering material from Lala G Timber Merchants. Residential, commercial & industrial projects by best wood supplier in Lahore.',
   path: '/projects',
 })
 

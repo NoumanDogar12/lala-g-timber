@@ -7,9 +7,9 @@ import { BlogCard } from '@/components/ui/BlogCard'
 import { JsonLd } from '@/components/seo/JsonLd'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Blog — Timber, Plywood & Construction Guides',
+  title: 'Blog — Timber, Wood, Plywood & Construction Material Guides Lahore',
   description:
-    'Expert guides on timber types, plywood selection, shuttering material, construction tips, and building material pricing in Lahore.',
+    'Expert guides on timber types, wood selection, plywood grades, shuttering material, construction tips, and building material pricing in Lahore. Learn about lakdi, phatta, ply & more.',
   path: '/blog',
 })
 

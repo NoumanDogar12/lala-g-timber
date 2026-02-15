@@ -8,9 +8,9 @@ import { JsonLd } from '@/components/seo/JsonLd'
 import { Button } from '@/components/ui/Button'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Plywood Supplier in Lahore — Marine, BWR, Commercial, Shuttering',
+  title: 'Best Plywood & Ply Supplier in Lahore — Marine, BWR, Commercial Phatta',
   description:
-    'Buy marine plywood, BWR plywood, commercial plywood, MDF & block board in Lahore. All grades and sizes available. Competitive prices from a trusted 30+ year supplier.',
+    'Buy marine plywood, BWR plywood, commercial ply, MDF & block board in Lahore. Phatta, ply sheet — all sizes available. Best plywood rates from trusted 30+ year wood supplier. Call for today\'s price.',
   path: '/products/plywood',
 })
 

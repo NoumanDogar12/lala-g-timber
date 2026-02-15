@@ -6,9 +6,9 @@ import { ContactForm } from '@/components/ui/ContactForm'
 import { JsonLd } from '@/components/seo/JsonLd'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Contact Lala G Timber Merchants — Phone, WhatsApp, Location',
+  title: 'Contact Best Timber & Wood Supplier in Lahore — Phone, WhatsApp, Location',
   description:
-    'Contact Lala G Timber Merchants in Lahore. Call +92 303 087 7771 for timber, plywood & shuttering material rates. Located at Timber Market, Ravi Road. WhatsApp available.',
+    'Contact Lala G Timber Merchants in Lahore for timber, wood, plywood, ply & shuttering material rates. Call +92 303 087 7771 or WhatsApp. Best wood supplier at Timber Market, Ravi Road.',
   path: '/contact',
 })
 

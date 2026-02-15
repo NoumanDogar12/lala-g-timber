@@ -6,9 +6,9 @@ import { CTASection } from '@/components/sections/CTASection'
 import { JsonLd } from '@/components/seo/JsonLd'
 
 export const metadata: Metadata = createMetadata({
-  title: 'About Lala G Timber Merchants — 30+ Years in Lahore',
+  title: 'About Lala G Timber Merchants — Best Wood & Timber Supplier Since 30+ Years',
   description:
-    'Learn about Lala G Timber Merchants, Lahore\'s trusted timber supplier since 30+ years. Located in Timber Market, Ravi Road. Quality wood, honest dealings, and reliable service.',
+    'Lala G Timber Merchants — Lahore\'s most trusted timber and wood supplier since 30+ years. Best lakdi, plywood, phatta & construction material merchant in Timber Market, Ravi Road. Quality wood, honest dealings.',
   path: '/about',
 })
 

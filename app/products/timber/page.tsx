@@ -9,9 +9,9 @@ import { JsonLd } from '@/components/seo/JsonLd'
 import { Button } from '@/components/ui/Button'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Timber Supplier in Lahore — Teak, Sal, Deodar, Pine, Sheesham',
+  title: 'Best Timber & Wood Supplier in Lahore — Teak, Deodar, Sheesham, Pine, Sal',
   description:
-    'Premium timber supplier in Lahore. Buy Teak, Sal, Deodar, Pine & Sheesham wood for construction, furniture & interior work. A-grade timber at competitive rates. Call for prices.',
+    'Best timber and wood supplier in Lahore. Buy Teak, Deodar, Sheesham, Pine, Sal & Partal lakdi for construction, furniture & interior work. A-grade wood at best rates. Trusted timber merchant since 30+ years. Call for prices.',
   path: '/products/timber',
 })
 

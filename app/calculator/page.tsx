@@ -6,9 +6,9 @@ import { CalculatorForm } from '@/components/calculator/CalculatorForm'
 import { JsonLd } from '@/components/seo/JsonLd'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Construction Material Calculator — Shuttering, Plywood, Timber',
+  title: 'Construction Material Calculator — Wood, Shuttering, Plywood, Timber Lahore',
   description:
-    'Free construction material calculator. Estimate shuttering plywood, steel props, centering plates, room plywood & timber framing requirements. Get instant results and call for rates.',
+    'Free construction material calculator for Lahore builders. Estimate shuttering plywood, steel props, centering plates, room ply & timber framing. Calculate wood requirements instantly. Call for best rates.',
   path: '/calculator',
 })
 

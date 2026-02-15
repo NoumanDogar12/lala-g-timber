@@ -8,9 +8,9 @@ import { Button } from '@/components/ui/Button'
 import { CallForRatesBadge } from '@/components/ui/CallForRatesBadge'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Shuttering Material in Lahore — Plywood, Props, Centering Plates',
+  title: 'Shuttering Material & Construction Wali in Lahore — Plywood, Props, Plates',
   description:
-    'Complete shuttering solutions in Lahore — shuttering plywood, steel props, centering plates & accessories. Bulk supply for construction sites. Call for best rates.',
+    'Complete shuttering and construction material in Lahore — shuttering plywood, steel props, centering plates, wali & accessories. Bulk supply for construction sites. Best rates from trusted wood supplier.',
   path: '/products/shuttering-material',
 })
 

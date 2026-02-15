@@ -8,9 +8,9 @@ import { JsonLd } from '@/components/seo/JsonLd'
 import { Button } from '@/components/ui/Button'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Delivery Areas in Lahore — Timber & Plywood Delivery',
+  title: 'Wood, Timber & Plywood Delivery in Lahore — 50+ Areas Covered',
   description:
-    'We deliver timber, plywood, and shuttering material across 50+ areas in Lahore including DHA, Gulberg, Model Town, Johar Town, and more. Same-day delivery available.',
+    'We deliver timber, wood, plywood, ply, phatta & shuttering material across 50+ areas in Lahore — DHA, Gulberg, Model Town, Johar Town & more. Same-day delivery from best construction material supplier.',
   path: '/delivery',
 })
 
