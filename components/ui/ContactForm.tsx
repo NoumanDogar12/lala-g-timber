@@ -51,9 +51,10 @@ export function ContactForm() {
       try {
         const res = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
           body: JSON.stringify({
             access_key: web3formsKey,
+            botcheck: '',
             subject: `New Inquiry - ${MATERIAL_LABELS[formData.material] || formData.material} | ${BUSINESS.name}`,
             from_name: formData.name,
             name: formData.name,
@@ -63,8 +64,9 @@ export function ContactForm() {
           }),
         })
 
-        if (!res.ok) {
-          console.error('Web3Forms submission failed')
+        const result = await res.json()
+        if (!result.success) {
+          console.error('Web3Forms error:', result.message)
         }
       } catch {
         console.error('Email sending failed, continuing with WhatsApp')
