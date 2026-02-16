@@ -28,6 +28,13 @@ export default function ContactPage() {
     '@id': `${BUSINESS.domain}/#business`,
     name: BUSINESS.name,
     url: BUSINESS.domain,
+    image: `${BUSINESS.domain}/icon.png`,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${BUSINESS.domain}/icon.png`,
+      width: 512,
+      height: 512,
+    },
     telephone: BUSINESS.phone,
     address: {
       '@type': 'PostalAddress',
