@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { playfair, inter } from '@/lib/fonts'
 import { BUSINESS } from '@/lib/constants'
 import { Header } from '@/components/layout/Header'
@@ -67,6 +69,8 @@ export default function RootLayout({
         <Footer />
         <WhatsAppButton />
         <StickyMobileBar />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
