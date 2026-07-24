@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { MetaPixel } from '@/components/analytics/MetaPixel'
 import { playfair, inter } from '@/lib/fonts'
 import { BUSINESS } from '@/lib/constants'
 import { Header } from '@/components/layout/Header'
@@ -72,6 +73,7 @@ export default function RootLayout({
         <StickyMobileBar />
         <Analytics />
         <SpeedInsights />
+        <MetaPixel />
       </body>
       <GoogleAnalytics gaId="G-LV809BGP7Z" />
     </html>
