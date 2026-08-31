@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { BUSINESS, getWhatsAppUrl } from '@/lib/constants'
 
@@ -30,10 +31,14 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 rounded-full bg-wood-warm flex items-center justify-center">
-                <svg viewBox="0 0 24 24" className="w-5 h-5 text-cream" fill="currentColor">
-                  <path d="M12 2L8 8h2.5L7 14h3.5L7 22h10l-3.5-8H17l-3.5-6H16L12 2z" />
-                </svg>
+              <div className="w-10 h-10 rounded-full bg-cream flex items-center justify-center shrink-0">
+                <Image
+                  src="/images/logo-log.png"
+                  alt=""
+                  width={144}
+                  height={144}
+                  className="w-7 h-7 object-contain"
+                />
               </div>
               <div>
                 <span className="font-heading text-xl font-bold text-white tracking-tight block">

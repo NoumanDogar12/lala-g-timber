@@ -1,16 +1,22 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { BUSINESS, NAV_LINKS } from '@/lib/constants'
 import { MobileNav } from './MobileNav'
 
-function WoodMark({ className = 'w-4.5 h-4.5' }: { className?: string }) {
+function WoodMark() {
   return (
-    <svg viewBox="0 0 24 24" className={className} fill="currentColor" aria-hidden="true">
-      <path d="M12 2L8 8h2.5L7 14h3.5L7 22h10l-3.5-8H17l-3.5-6H16L12 2z" />
-    </svg>
+    <Image
+      src="/images/logo-log.png"
+      alt=""
+      width={144}
+      height={144}
+      className="w-7 h-7 object-contain"
+      priority
+    />
   )
 }
 
@@ -51,7 +57,7 @@ export function Header() {
             href="/"
             className={`group flex items-center gap-2.5 bg-white rounded-full pl-2 pr-5 py-2 shrink-0 transition-shadow duration-300 ${shadow}`}
           >
-            <span className="w-9 h-9 rounded-full bg-wood text-white flex items-center justify-center group-hover:bg-wood-warm transition-colors duration-300">
+            <span className="w-9 h-9 rounded-full bg-cream ring-1 ring-cream-dark/50 flex items-center justify-center group-hover:bg-cream-dark/60 transition-colors duration-300">
               <WoodMark />
             </span>
             <span className="text-sm font-semibold text-wood tracking-wide whitespace-nowrap">
@@ -131,7 +137,7 @@ export function Header() {
         {/* Mobile */}
         <div className={`flex lg:hidden items-center justify-between bg-white rounded-full px-2 py-1.5 transition-shadow duration-300 ${shadow}`}>
           <Link href="/" className="flex items-center gap-2.5 pl-1 shrink-0 group min-h-[44px]">
-            <span className="w-9 h-9 rounded-full bg-wood text-white flex items-center justify-center group-hover:bg-wood-warm transition-colors duration-300">
+            <span className="w-9 h-9 rounded-full bg-cream ring-1 ring-cream-dark/50 flex items-center justify-center group-hover:bg-cream-dark/60 transition-colors duration-300">
               <WoodMark />
             </span>
             <span className="text-sm font-semibold text-wood">Lala G</span>
