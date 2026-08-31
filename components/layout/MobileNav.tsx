@@ -1,12 +1,30 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { NAV_LINKS, BUSINESS, getWhatsAppUrl } from '@/lib/constants'
 
 export function MobileNav() {
+  const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false)
   const [expandedItem, setExpandedItem] = useState<string | null>(null)
+
+  const isActive = (href: string) =>
+    href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(href + '/')
+
+  // Close the drawer on navigation and lock background scroll while it is open.
+  useEffect(() => {
+    setIsOpen(false)
+    setExpandedItem(null)
+  }, [pathname])
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? 'hidden' : ''
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isOpen])
 
   const toggleMenu = () => setIsOpen(!isOpen)
   const closeMenu = () => {
@@ -56,7 +74,11 @@ export function MobileNav() {
                         onClick={() =>
                           setExpandedItem(expandedItem === link.href ? null : link.href)
                         }
-                        className="w-full flex items-center justify-between px-4 py-3 text-[15px] font-medium text-wood hover:text-gold rounded-xl hover:bg-cream/50 transition-colors"
+                        className={`w-full flex items-center justify-between px-4 py-3 text-[15px] rounded-xl transition-colors ${
+                          isActive(link.href)
+                            ? 'bg-cream text-wood font-semibold'
+                            : 'font-medium text-wood hover:text-gold hover:bg-cream/50'
+                        }`}
                       >
                         {link.label}
                         <svg
@@ -87,7 +109,12 @@ export function MobileNav() {
                               <Link
                                 href={child.href}
                                 onClick={closeMenu}
-                                className="block px-3 py-2.5 text-sm text-wood-medium hover:text-gold transition-colors rounded-lg"
+                                aria-current={isActive(child.href) ? 'page' : undefined}
+                                className={`block px-3 py-2.5 text-sm rounded-lg transition-colors ${
+                                  isActive(child.href)
+                                    ? 'text-wood font-semibold bg-cream/60'
+                                    : 'text-wood-medium hover:text-gold'
+                                }`}
                               >
                                 {child.label}
                               </Link>
@@ -100,7 +127,12 @@ export function MobileNav() {
                     <Link
                       href={link.href}
                       onClick={closeMenu}
-                      className="block px-4 py-3 text-[15px] font-medium text-wood hover:text-gold rounded-xl hover:bg-cream/50 transition-colors"
+                      aria-current={isActive(link.href) ? 'page' : undefined}
+                      className={`block px-4 py-3 text-[15px] rounded-xl transition-colors ${
+                        isActive(link.href)
+                          ? 'bg-cream text-wood font-semibold'
+                          : 'font-medium text-wood hover:text-gold hover:bg-cream/50'
+                      }`}
                     >
                       {link.label}
                     </Link>
