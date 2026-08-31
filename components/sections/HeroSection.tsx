@@ -29,7 +29,7 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-0 w-full">
-        <div className="max-w-3xl mx-auto text-center lg:text-left lg:mx-0">
+        <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-up">
             <TrustBadge />
           </div>
@@ -40,13 +40,13 @@ export function HeroSection() {
             in Lahore
           </h1>
 
-          <p className="animate-fade-up [animation-delay:200ms] text-cream/80 text-lg lg:text-xl max-w-xl mb-10 leading-relaxed mx-auto lg:mx-0">
+          <p className="animate-fade-up [animation-delay:200ms] text-cream/80 text-lg lg:text-xl max-w-2xl mb-10 leading-relaxed mx-auto">
             Lahore&apos;s most trusted timber supplier for {BUSINESS.yearsInBusiness}+ years.
             Quality construction wood, marine plywood &amp; shuttering material at
             competitive rates.
           </p>
 
-          <div className="animate-fade-up [animation-delay:300ms] flex flex-col sm:flex-row items-center lg:items-start gap-4">
+          <div className="animate-fade-up [animation-delay:300ms] flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button href={`tel:${BUSINESS.phone}`} variant="gold">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                 <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
@@ -64,7 +64,7 @@ export function HeroSection() {
             </Button>
           </div>
 
-          <div className="animate-fade-up [animation-delay:400ms] mt-8 flex items-center justify-center lg:justify-start gap-4 text-sm">
+          <div className="animate-fade-up [animation-delay:400ms] mt-8 flex items-center justify-center gap-4 text-sm">
             <a href={`tel:${BUSINESS.phone}`} className="font-medium text-cream hover:text-gold-light transition-colors inline-flex items-center min-h-[44px]">
               {BUSINESS.phoneDisplay}
             </a>

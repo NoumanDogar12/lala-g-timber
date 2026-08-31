@@ -63,7 +63,7 @@ export function WhyChooseUs() {
             </p>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-cream-dark/30">
               <Image
-                src="/images/plywood-sheets-lahore.jpg"
+                src="/images/ply-high-pressure.jpg"
                 alt="Stacked film-coated plywood sheets at the Lala G yard in Lahore"
                 fill
                 className="object-cover"

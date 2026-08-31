@@ -68,8 +68,8 @@ export default function PlywoodPage() {
       {/* Hero */}
       <section className="relative py-16 lg:py-20 overflow-hidden">
         <Image
-          src="/images/ply-shuttering-site.jpg"
-          alt="Film-coated shuttering plywood boards on site in Lahore"
+          src="/images/plywood-yard-wide-lahore.jpg"
+          alt="Film-coated shuttering plywood stacked in the Lala G godown, Lahore"
           fill
           priority
           className="object-cover"

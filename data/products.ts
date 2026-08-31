@@ -26,8 +26,8 @@ export const productCategories: ProductCategory[] = [
       'Full range of plywood for every application — Marine, Commercial, Simbal, Solar and branded 16mm/18mm shuttering boards.',
     features: ['Duraplex', 'Korenplex', 'Greenplex', 'Marine', 'Simbal', 'Solar'],
     href: '/products/plywood',
-    image: '/images/ply-high-pressure.jpg',
-    imageAlt: 'Yard stack of film-coated shuttering plywood in Lahore',
+    image: '/images/plywood-yard-lahore.jpg',
+    imageAlt: 'Godown stacked with film-coated shuttering plywood sheets in Lahore',
   },
   {
     title: 'Shuttering Material',
