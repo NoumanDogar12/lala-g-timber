@@ -46,6 +46,10 @@ export default function Home() {
             closes: BUSINESS.hours.closes,
           },
         ],
+        areaServed: [
+          { '@type': 'City', name: 'Lahore' },
+          { '@type': 'Country', name: 'Pakistan' },
+        ],
         priceRange: '$$',
         description:
           'Best timber, wood, plywood & shuttering material supplier in Lahore. 30+ years trusted wood merchant. Lakdi, phatta, ply, wali — all construction material. Deodar, Sheesham, Kikkar, marine plywood & more.',

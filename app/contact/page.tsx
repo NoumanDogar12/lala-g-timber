@@ -49,6 +49,10 @@ export default function ContactPage() {
       latitude: BUSINESS.geo.latitude,
       longitude: BUSINESS.geo.longitude,
     },
+    areaServed: [
+      { '@type': 'City', name: 'Lahore' },
+      { '@type': 'Country', name: 'Pakistan' },
+    ],
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
