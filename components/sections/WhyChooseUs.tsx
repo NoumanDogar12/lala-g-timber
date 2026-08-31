@@ -63,8 +63,8 @@ export function WhyChooseUs() {
             </p>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-cream-dark/30">
               <Image
-                src="/images/ply-high-pressure.jpg"
-                alt="Stacked plywood sheets at the Lala G yard in Lahore"
+                src="/images/plywood-sheets-lahore.jpg"
+                alt="Stacked film-coated plywood sheets at the Lala G yard in Lahore"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 40vw"

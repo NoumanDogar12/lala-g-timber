@@ -61,8 +61,8 @@ export default function ShutteringMaterialPage() {
       {/* Hero */}
       <section className="relative py-16 lg:py-20 overflow-hidden">
         <Image
-          src="/images/ply-shuttering-site.jpg"
-          alt="Film-faced shuttering plywood sheets in stock in Lahore"
+          src="/images/shuttering-plywood-lahore.jpg"
+          alt="Film-coated Duraplex shuttering plywood sheet in stock in Lahore"
           fill
           priority
           className="object-cover"
