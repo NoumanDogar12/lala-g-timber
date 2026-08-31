@@ -31,6 +31,14 @@ function PhoneIcon({ className }: { className: string }) {
 export function Header() {
   const pathname = usePathname()
   const [scrolled, setScrolled] = useState(false)
+  const [openMenu, setOpenMenu] = useState<string | null>(null)
+
+  // Close any open submenu on navigation. A CSS-only hover/focus-within menu
+  // stayed pinned open after clicking a child link, because focus remains on
+  // that link inside the group.
+  useEffect(() => {
+    setOpenMenu(null)
+  }, [pathname])
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12)
@@ -71,10 +79,34 @@ export function Header() {
                 const active = isActive(link.href)
                 const hasChildren = 'children' in link && link.children
                 return (
-                  <div key={link.href} className="relative group">
+                  <div
+                    key={link.href}
+                    className="relative group"
+                    onMouseEnter={hasChildren ? () => setOpenMenu(link.href) : undefined}
+                    onMouseLeave={hasChildren ? () => setOpenMenu(null) : undefined}
+                    onFocus={hasChildren ? () => setOpenMenu(link.href) : undefined}
+                    onBlur={
+                      hasChildren
+                        ? (e) => {
+                            if (!e.currentTarget.contains(e.relatedTarget as Node)) {
+                              setOpenMenu(null)
+                            }
+                          }
+                        : undefined
+                    }
+                    onKeyDown={
+                      hasChildren
+                        ? (e) => {
+                            if (e.key === 'Escape') setOpenMenu(null)
+                          }
+                        : undefined
+                    }
+                  >
                     <Link
                       href={link.href}
                       aria-current={active ? 'page' : undefined}
+                      aria-haspopup={hasChildren ? 'true' : undefined}
+                      aria-expanded={hasChildren ? openMenu === link.href : undefined}
                       className={`px-3.5 min-h-[40px] text-sm rounded-full transition-all duration-200 whitespace-nowrap inline-flex items-center ${
                         active
                           ? 'bg-cream text-wood font-semibold'
@@ -96,10 +128,10 @@ export function Header() {
                       )}
                     </Link>
 
-                    {/* focus-within keeps the submenu reachable by keyboard —
-                        hover alone left it unusable without a mouse. */}
-                    {hasChildren && (
-                      <div className="absolute left-0 top-full pt-3 hidden group-hover:block group-focus-within:block z-50">
+                    {/* Reachable by both pointer and keyboard, and explicitly
+                        closed on navigation. */}
+                    {hasChildren && openMenu === link.href && (
+                      <div className="absolute left-0 top-full pt-3 z-50">
                         <div className="bg-white border border-cream-dark/20 rounded-xl shadow-xl shadow-wood/10 py-2 min-w-[210px]">
                           {link.children.map((child) => (
                             <Link
