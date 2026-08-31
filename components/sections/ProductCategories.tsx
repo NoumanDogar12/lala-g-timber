@@ -3,7 +3,7 @@ import { ProductCard } from '@/components/ui/ProductCard'
 
 export function ProductCategories() {
   return (
-    <section className="py-20 lg:py-28">
+    <section className="pt-12 pb-16 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">

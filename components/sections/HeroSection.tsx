@@ -32,7 +32,7 @@ function HotBadge({ className = '' }: { className?: string }) {
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-[86svh] lg:min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-[86svh] lg:min-h-screen pb-8 lg:pb-0 flex items-center overflow-hidden">
       {/* Background image */}
       <Image
         src="/images/hero-bg.jpg"
