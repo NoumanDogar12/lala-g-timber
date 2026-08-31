@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# marketing assets & plans (not used by the site)
+/public/ads/
+/public/print/
+/public/wooden-pictures/
+/public/logo-mark.svg
+meta-campaign-plan.md
+meta-winning-visuals-plan.md
+wood-ads-playbook.md
+second-brand-ad-kit.zip
