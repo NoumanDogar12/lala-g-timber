@@ -83,7 +83,7 @@ export default function Home() {
       {/* Stats Section */}
       <section className="relative py-16 lg:py-20 overflow-hidden">
         <Image
-          src="/images/timber-stack-lahore.jpg"
+          src="/images/timber-planks-lahore.jpg"
           alt=""
           aria-hidden="true"
           fill
