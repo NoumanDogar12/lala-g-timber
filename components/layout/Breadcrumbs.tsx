@@ -38,7 +38,7 @@ export function Breadcrumbs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1">
         <ol className="flex flex-wrap items-center gap-1.5 text-sm text-text-muted">
           <li>
-            <Link href="/" className="hover:text-wood transition-colors inline-flex items-center min-h-[44px]">
+            <Link href="/" className="hover:text-wood transition-colors inline-flex items-center justify-center min-h-[44px] min-w-[44px]">
               Home
             </Link>
           </li>
@@ -52,7 +52,7 @@ export function Breadcrumbs() {
                   {crumb.label}
                 </span>
               ) : (
-                <Link href={crumb.href} className="hover:text-wood transition-colors inline-flex items-center min-h-[44px]">
+                <Link href={crumb.href} className="hover:text-wood transition-colors inline-flex items-center justify-center min-h-[44px] min-w-[44px]">
                   {crumb.label}
                 </Link>
               )}
