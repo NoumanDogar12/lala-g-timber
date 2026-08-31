@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Metadata } from 'next'
 import { createMetadata } from '@/lib/metadata'
 import { plywoodTypes } from '@/data/products'
@@ -66,8 +67,16 @@ export default function PlywoodPage() {
 
       {/* Hero */}
       <section className="relative py-16 lg:py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-wood via-wood-light to-wood-medium" />
-        <div className="absolute top-1/2 right-0 w-[400px] h-[400px] rounded-full bg-gold/[0.06] blur-[80px]" />
+        <Image
+          src="/images/plywood-sheets-lahore.jpg"
+          alt="Stacked plywood sheets at Lala G Timber Merchant, Lahore"
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+          quality={72}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-wood/92 via-wood-light/88 to-wood-medium/92" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-3">All Grades</p>
           <h1 className="font-heading text-3xl lg:text-5xl font-bold text-white mb-4">

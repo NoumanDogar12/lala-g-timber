@@ -4,6 +4,8 @@ export interface ProductCategory {
   description: string
   features: string[]
   href: string
+  image: string
+  imageAlt: string
 }
 
 export const productCategories: ProductCategory[] = [
@@ -14,6 +16,8 @@ export const productCategories: ProductCategory[] = [
       'Premium construction and furniture timber including Teak, Sal, Deodar, Pine, and Sheesham in all grades and dimensions.',
     features: ['Teak', 'Sal', 'Deodar', 'Pine', 'Sheesham'],
     href: '/products/timber',
+    image: '/images/timber-planks-lahore.jpg',
+    imageAlt: 'Sawn timber planks stacked at Lala G Timber Merchant in Lahore',
   },
   {
     title: 'Plywood',
@@ -22,6 +26,8 @@ export const productCategories: ProductCategory[] = [
       'Full range of plywood for every application — Marine, BWR, Commercial, Shuttering Plywood, MDF, and Block Board.',
     features: ['Marine Plywood', 'BWR Grade', 'Commercial', 'MDF', 'Block Board'],
     href: '/products/plywood',
+    image: '/images/plywood-sheets-lahore.jpg',
+    imageAlt: 'Stacked plywood sheets ready for delivery in Lahore',
   },
   {
     title: 'Shuttering Material',
@@ -30,6 +36,8 @@ export const productCategories: ProductCategory[] = [
       'Complete shuttering solutions — plywood sheets, steel props, centering plates, and accessories for construction projects.',
     features: ['Shuttering Ply', 'Steel Props', 'Centering Plates', 'Accessories'],
     href: '/products/shuttering-material',
+    image: '/images/shuttering-plywood-lahore.jpg',
+    imageAlt: 'Red film-faced shuttering plywood sheets in stock',
   },
 ]
 

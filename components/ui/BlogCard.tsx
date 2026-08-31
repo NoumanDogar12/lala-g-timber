@@ -32,7 +32,7 @@ export function BlogCard({ post }: { post: BlogPost }) {
         </p>
         <Link
           href={`/blog/${post.slug}`}
-          className="text-sm font-semibold text-wood hover:text-gold transition-colors inline-flex items-center gap-1.5"
+          className="text-sm font-semibold text-wood hover:text-gold transition-colors inline-flex items-center gap-1.5 min-h-[44px]"
         >
           Read More
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

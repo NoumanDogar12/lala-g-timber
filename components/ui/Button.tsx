@@ -18,6 +18,8 @@ const variantStyles: Record<ButtonVariant, string> = {
     'bg-wood text-white hover:bg-wood-warm shadow-lg shadow-wood/15 hover:shadow-xl hover:shadow-wood/25',
   secondary:
     'bg-white text-wood border border-cream-dark/30 hover:bg-cream hover:border-gold/30 shadow-sm',
+  // Dark backgrounds only — white on a light page is unreadable.
+  // Use `secondary` for the equivalent button on light backgrounds.
   outline:
     'border border-white/25 text-white hover:bg-white/[0.08] hover:border-white/40',
   gold:

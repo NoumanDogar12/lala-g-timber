@@ -49,7 +49,7 @@ export default function PrivacyPage() {
             <h2 className="font-heading text-xl font-semibold text-wood">Contact</h2>
             <p>
               If you have questions about this privacy policy, contact us at{' '}
-              <a href={`tel:${BUSINESS.phone}`} className="text-wood font-medium hover:text-gold-dark transition-colors">
+              <a href={`tel:${BUSINESS.phone}`} className="text-wood font-medium hover:text-gold-dark transition-colors inline-flex items-center min-h-[44px]">
                 {BUSINESS.phoneDisplay}
               </a>.
             </p>

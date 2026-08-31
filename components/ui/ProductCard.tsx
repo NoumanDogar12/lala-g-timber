@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { CallForRatesBadge } from './CallForRatesBadge'
 
@@ -6,31 +7,45 @@ interface ProductCardProps {
   description: string
   features: string[]
   href: string
+  image: string
+  imageAlt: string
+  priority?: boolean
 }
 
-export function ProductCard({ title, description, features, href }: ProductCardProps) {
+export function ProductCard({
+  title,
+  description,
+  features,
+  href,
+  image,
+  imageAlt,
+  priority = false,
+}: ProductCardProps) {
   return (
-    <div className="group bg-white rounded-2xl border border-cream-dark/30 overflow-hidden card-hover">
-      {/* Warm gradient header with wood grain */}
-      <div className="relative h-48 bg-gradient-to-br from-wood-warm via-wood-light to-wood overflow-hidden wood-texture">
-        <div className="relative z-10 h-full flex items-center justify-center">
-          <span className="font-heading text-3xl font-bold text-white/20 group-hover:text-white/35 transition-colors duration-500">
-            {title}
-          </span>
-        </div>
-        {/* Gold accent line */}
-        <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-gold/0 via-gold to-gold/0 opacity-50 group-hover:opacity-100 transition-opacity duration-300 z-10" />
-      </div>
-
-      <div className="p-6">
-        <h3 className="font-heading text-xl font-semibold text-wood mb-2">
+    <div className="group bg-white rounded-2xl border border-cream-dark/30 overflow-hidden card-hover flex flex-col">
+      {/* Real stock photography — the credibility argument for a timber yard */}
+      <div className="relative aspect-[4/3] overflow-hidden">
+        <Image
+          src={image}
+          alt={imageAlt}
+          fill
+          priority={priority}
+          className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+          quality={78}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-bark/85 via-bark/25 to-transparent" />
+        <h3 className="absolute bottom-4 left-5 right-5 font-heading text-2xl font-bold text-white drop-shadow-sm">
           {title}
         </h3>
-        <p className="text-text-muted text-sm mb-4 line-clamp-2">
+      </div>
+
+      <div className="p-6 flex flex-col flex-1">
+        <p className="text-text-muted text-sm mb-5 leading-relaxed line-clamp-2">
           {description}
         </p>
 
-        <div className="flex flex-wrap gap-2 mb-5">
+        <div className="flex flex-wrap gap-2 mb-6">
           {features.slice(0, 4).map((feature) => (
             <span
               key={feature}
@@ -41,10 +56,10 @@ export function ProductCard({ title, description, features, href }: ProductCardP
           ))}
         </div>
 
-        <div className="flex items-center justify-between pt-4 border-t border-cream-dark/20">
+        <div className="flex items-center justify-between gap-3 pt-4 mt-auto border-t border-cream-dark/20">
           <Link
             href={href}
-            className="text-sm font-semibold text-wood hover:text-gold transition-colors inline-flex items-center gap-1.5 group-hover:gap-2.5 duration-300"
+            className="text-sm font-semibold text-wood hover:text-gold transition-colors inline-flex items-center gap-1.5 group-hover:gap-2.5 duration-300 min-h-[44px]"
           >
             View Details
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

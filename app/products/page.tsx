@@ -43,13 +43,16 @@ export default function ProductsPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {productCategories.map((product) => (
+            {productCategories.map((product, i) => (
               <ProductCard
                 key={product.slug}
                 title={product.title}
                 description={product.description}
                 features={product.features}
                 href={product.href}
+                image={product.image}
+                imageAlt={product.imageAlt}
+                priority={i === 0}
               />
             ))}
           </div>
