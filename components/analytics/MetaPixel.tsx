@@ -25,7 +25,9 @@ declare global {
  * Clicks are captured via a single delegated listener, so every WhatsApp/call
  * link across the site is tracked without touching individual components.
  *
- * Renders nothing unless NEXT_PUBLIC_META_PIXEL_ID is set.
+ * Always renders: PIXEL_ID falls back to the hardcoded production ID above, so
+ * the pixel fires in every environment. Set NEXT_PUBLIC_META_PIXEL_ID to point
+ * a given environment at a different pixel.
  */
 export function MetaPixel() {
   const pathname = usePathname()

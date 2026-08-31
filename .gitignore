@@ -49,3 +49,6 @@ meta-campaign-plan.md
 meta-winning-visuals-plan.md
 wood-ads-playbook.md
 second-brand-ad-kit.zip
+
+# local Claude Code settings (per-machine)
+.claude/settings.local.json
