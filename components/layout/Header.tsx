@@ -83,7 +83,7 @@ export function Header() {
         {/* Mobile: Single full-width pill */}
         <div className="flex lg:hidden items-center justify-between bg-white rounded-full px-2 py-1.5 shadow-lg shadow-black/[0.06]">
           {/* Logo + Brand */}
-          <Link href="/" className="flex items-center gap-2.5 pl-1 shrink-0 group">
+          <Link href="/" className="flex items-center gap-2.5 pl-1 shrink-0 group min-h-[44px]">
             <div className="w-9 h-9 rounded-full bg-wood flex items-center justify-center group-hover:bg-wood-warm transition-colors duration-300">
               <svg viewBox="0 0 24 24" className="w-4.5 h-4.5 text-white" fill="currentColor">
                 <path d="M12 2L8 8h2.5L7 14h3.5L7 22h10l-3.5-8H17l-3.5-6H16L12 2z" />
@@ -96,7 +96,7 @@ export function Header() {
           <div className="flex items-center gap-1">
             <a
               href={`tel:${BUSINESS.phone}`}
-              className="flex items-center gap-1.5 bg-wood text-white rounded-full px-3.5 py-2 text-xs font-semibold hover:bg-wood-warm transition-colors"
+              className="flex items-center gap-1.5 bg-wood text-white rounded-full px-3.5 text-xs font-semibold hover:bg-wood-warm transition-colors min-h-[44px]"
               aria-label={`Call ${BUSINESS.phoneDisplay}`}
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5">

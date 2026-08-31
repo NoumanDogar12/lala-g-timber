@@ -65,7 +65,7 @@ export function HeroSection() {
           </div>
 
           <div className="animate-fade-up [animation-delay:400ms] mt-8 flex items-center justify-center lg:justify-start gap-4 text-sm">
-            <a href={`tel:${BUSINESS.phone}`} className="font-medium text-cream hover:text-gold-light transition-colors">
+            <a href={`tel:${BUSINESS.phone}`} className="font-medium text-cream hover:text-gold-light transition-colors inline-flex items-center min-h-[44px]">
               {BUSINESS.phoneDisplay}
             </a>
             <span className="w-1 h-1 rounded-full bg-gold-light/40" />
