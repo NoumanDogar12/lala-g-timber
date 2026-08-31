@@ -3,7 +3,7 @@ import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { MetaPixel } from '@/components/analytics/MetaPixel'
-import { playfair, inter } from '@/lib/fonts'
+import { display, inter } from '@/lib/fonts'
 import { BUSINESS } from '@/lib/constants'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
@@ -64,7 +64,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+    <html lang="en" className={`${display.variable} ${inter.variable}`}>
       <body className="antialiased">
         <Header />
         <main>{children}</main>

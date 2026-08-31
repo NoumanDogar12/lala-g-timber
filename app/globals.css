@@ -20,8 +20,8 @@
   --color-green-wa: #25D366;
   --color-ring: #B1744B;
 
-  --font-heading: var(--font-playfair);
-  --font-body: var(--font-inter);
+  --font-heading: var(--font-display);
+  --font-body: var(--font-sans);
 }
 
 body {
@@ -31,7 +31,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading), Georgia, serif;
+  font-family: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.022em;
+  font-weight: 600;
 }
 
 html {

@@ -1,13 +1,16 @@
-import { Playfair_Display, Inter } from 'next/font/google'
+import { Inter, Inter_Tight } from 'next/font/google'
 
-export const playfair = Playfair_Display({
+// Headings: a tighter, plainer grotesque. Replaces Playfair Display, whose
+// high-contrast display serif read as decorative rather than premium.
+export const display = Inter_Tight({
   subsets: ['latin'],
-  variable: '--font-playfair',
+  variable: '--font-display',
   display: 'swap',
+  weight: ['500', '600', '700'],
 })
 
 export const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-sans',
   display: 'swap',
 })

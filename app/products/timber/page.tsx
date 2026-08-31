@@ -77,7 +77,7 @@ export default function TimberPage() {
       {/* Hero */}
       <section className="relative py-16 lg:py-20 overflow-hidden">
         <Image
-          src="/images/timber-planks-lahore.jpg"
+          src="/images/wood-sheesham.jpg"
           alt="Sawn timber planks in stock at Lala G Timber Merchant, Lahore"
           fill
           priority

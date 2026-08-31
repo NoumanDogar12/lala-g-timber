@@ -68,7 +68,7 @@ export default function PlywoodPage() {
       {/* Hero */}
       <section className="relative py-16 lg:py-20 overflow-hidden">
         <Image
-          src="/images/plywood-sheets-lahore.jpg"
+          src="/images/plywood-stack-lahore.jpg"
           alt="Stacked plywood sheets at Lala G Timber Merchant, Lahore"
           fill
           priority

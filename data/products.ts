@@ -16,7 +16,7 @@ export const productCategories: ProductCategory[] = [
       'Premium construction and furniture timber including Deodar, Pine, Sheesham, Kikkar and Partal in all grades and dimensions.',
     features: ['Deodar', 'Sheesham', 'Kikkar', 'Partal / Kail', 'Sufaida', 'Pine'],
     href: '/products/timber',
-    image: '/images/timber-planks-lahore.jpg',
+    image: '/images/timber-sawn-lahore.jpg',
     imageAlt: 'Sawn timber planks stacked at Lala G Timber Merchant in Lahore',
   },
   {
@@ -26,7 +26,7 @@ export const productCategories: ProductCategory[] = [
       'Full range of plywood for every application — Marine, Commercial, Simbal, Solar and branded 16mm/18mm shuttering boards.',
     features: ['Duraplex', 'Korenplex', 'Greenplex', 'Marine', 'Simbal', 'Solar'],
     href: '/products/plywood',
-    image: '/images/plywood-sheets-lahore.jpg',
+    image: '/images/plywood-stack-lahore.jpg',
     imageAlt: 'Stacked plywood sheets ready for delivery in Lahore',
   },
   {
@@ -36,7 +36,7 @@ export const productCategories: ProductCategory[] = [
       'Complete shuttering solutions — plywood sheets, steel props, centering plates, and accessories for construction projects.',
     features: ['Shuttering Ply', 'Phatta', 'Baala', 'Wali', 'Gola', 'Naala'],
     href: '/products/shuttering-material',
-    image: '/images/shuttering-plywood-lahore.jpg',
+    image: '/images/shuttering-baala-lahore.jpg',
     imageAlt: 'Red film-faced shuttering plywood sheets in stock',
   },
 ]
