@@ -14,7 +14,7 @@ export const productCategories: ProductCategory[] = [
     slug: 'timber',
     description:
       'Premium construction and furniture timber including Teak, Sal, Deodar, Pine, and Sheesham in all grades and dimensions.',
-    features: ['Teak', 'Sal', 'Deodar', 'Pine', 'Sheesham'],
+    features: ['Teak', 'Deodar', 'Sheesham', 'Kikkar', 'Partal / Kail', 'Sufaida'],
     href: '/products/timber',
     image: '/images/timber-planks-lahore.jpg',
     imageAlt: 'Sawn timber planks stacked at Lala G Timber Merchant in Lahore',
@@ -24,7 +24,7 @@ export const productCategories: ProductCategory[] = [
     slug: 'plywood',
     description:
       'Full range of plywood for every application — Marine, BWR, Commercial, Shuttering Plywood, MDF, and Block Board.',
-    features: ['Marine Plywood', 'BWR Grade', 'Commercial', 'MDF', 'Block Board'],
+    features: ['Marine', 'BWR Grade', 'Simbal', 'Solar', 'High Pressure', 'Imported'],
     href: '/products/plywood',
     image: '/images/plywood-sheets-lahore.jpg',
     imageAlt: 'Stacked plywood sheets ready for delivery in Lahore',
@@ -34,7 +34,7 @@ export const productCategories: ProductCategory[] = [
     slug: 'shuttering-material',
     description:
       'Complete shuttering solutions — plywood sheets, steel props, centering plates, and accessories for construction projects.',
-    features: ['Shuttering Ply', 'Steel Props', 'Centering Plates', 'Accessories'],
+    features: ['Shuttering Ply', 'Phatta', 'Baala', 'Wali', 'Gola', 'Naala'],
     href: '/products/shuttering-material',
     image: '/images/shuttering-plywood-lahore.jpg',
     imageAlt: 'Red film-faced shuttering plywood sheets in stock',
@@ -83,6 +83,41 @@ export const timberTypes: TimberType[] = [
       'Beautiful hardwood with distinctive grain patterns. Highly valued for premium furniture making and decorative applications.',
     uses: ['Fine furniture', 'Decorative items', 'Musical instruments', 'Carving'],
     grades: ['A Grade', 'B Grade'],
+  },
+  {
+    name: 'Kikkar (Keekar)',
+    description:
+      'Local acacia and the densest wood in regular trade. Takes nails without splitting, carries load without complaint, and handles Lahore\u2019s humidity swings better than imported softwood \u2014 the default for battens, supports and bed frames.',
+    uses: ['Battens & supports', 'Bed frames', 'Shuttering props', 'Packing wood'],
+    grades: ['32 Lar Bundle', '24 Lar Bundle', '20 Lar Bundle', 'Bed Lar'],
+  },
+  {
+    name: 'Partal / Kail',
+    description:
+      'Light, straight-grained softwood stocked as baala and reep for roofing and shuttering support. Easy to work and economical for temporary structures.',
+    uses: ['Roofing support', 'Shuttering framing', 'Temporary structures', 'Pallets'],
+    grades: ['8\u2032 Baala / Reep', '12\u2032 Baala / Reep'],
+  },
+  {
+    name: 'Sufaida (Poplar)',
+    description:
+      'Fast-growing local poplar, light in weight and colour. Widely used for packing wood, bundles and general-purpose work where cost matters more than hardness.',
+    uses: ['Packing wood', 'Bundles', 'Light framing', 'General joinery'],
+    grades: ['Baala', 'Bundle', 'Phatta', 'Packing Wood'],
+  },
+  {
+    name: 'Yellow Pine',
+    description:
+      'Imported softwood with a clean, even grain. Stable and straightforward to machine, suited to interior joinery and furniture carcassing.',
+    uses: ['Interior joinery', 'Furniture carcassing', 'Panelling', 'Mouldings'],
+    grades: ['A Grade', 'B Grade'],
+  },
+  {
+    name: 'Ash Wood',
+    description:
+      'Tough, pale hardwood with pronounced grain and excellent shock resistance. Favoured for furniture frames and components that take repeated stress.',
+    uses: ['Furniture frames', 'Tool handles', 'Interior fittings', 'Turned components'],
+    grades: ['A Grade'],
   },
 ]
 
@@ -142,5 +177,37 @@ export const plywoodTypes: PlywoodType[] = [
     waterResistance: 'Moderate',
     priceRange: '$$',
     bestUse: 'Large doors, tables, long shelves, partitions',
+  },
+  {
+    name: 'Simbal Plywood',
+    description:
+      'Light 8mm board for short jobs, lining work and low-load applications.',
+    waterResistance: 'Basic',
+    priceRange: '$',
+    bestUse: 'Lining, short jobs, light partitions',
+  },
+  {
+    name: 'Solar Plywood',
+    description:
+      '14mm residential workhorse \u2014 the common choice for house construction shuttering.',
+    waterResistance: 'Moderate',
+    priceRange: '$$',
+    bestUse: 'Residential slabs and columns',
+  },
+  {
+    name: 'High Pressure Plywood',
+    description:
+      'Monsoon-rated board in 16mm and 18mm, built for repeated wet pours and heavy commercial casting.',
+    waterResistance: 'High (WBP)',
+    priceRange: '$$$',
+    bestUse: 'Heavy pours, monsoon casting, high reuse cycles',
+  },
+  {
+    name: 'Imported Plywood',
+    description:
+      'Imported boards held in stock and priced according to weight rather than per sheet.',
+    waterResistance: 'Varies by grade',
+    priceRange: 'By weight',
+    bestUse: 'Specification-driven and specialist projects',
   },
 ]
