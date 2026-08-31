@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/Button'
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-[86svh] lg:min-h-screen flex items-center overflow-hidden">
       {/* Background image */}
       <Image
         src="/images/hero-bg.jpg"
@@ -34,19 +34,19 @@ export function HeroSection() {
             <TrustBadge />
           </div>
 
-          <h1 className="animate-fade-up [animation-delay:200ms] font-heading text-4xl sm:text-5xl lg:text-7xl font-bold text-white mt-8 mb-6 leading-[1.08] tracking-tight">
+          <h1 className="animate-fade-up [animation-delay:100ms] font-heading text-4xl sm:text-5xl lg:text-7xl font-bold text-white mt-8 mb-6 leading-[1.08] tracking-tight">
             Premium Timber &amp;{' '}
             <span className="text-gold-light">Plywood</span>{' '}
             in Lahore
           </h1>
 
-          <p className="animate-fade-up [animation-delay:400ms] text-cream/80 text-lg lg:text-xl max-w-xl mb-10 leading-relaxed mx-auto lg:mx-0">
+          <p className="animate-fade-up [animation-delay:200ms] text-cream/80 text-lg lg:text-xl max-w-xl mb-10 leading-relaxed mx-auto lg:mx-0">
             Lahore&apos;s most trusted timber supplier for {BUSINESS.yearsInBusiness}+ years.
             Quality construction wood, marine plywood &amp; shuttering material at
             competitive rates.
           </p>
 
-          <div className="animate-fade-up [animation-delay:600ms] flex flex-col sm:flex-row items-center lg:items-start gap-4">
+          <div className="animate-fade-up [animation-delay:300ms] flex flex-col sm:flex-row items-center lg:items-start gap-4">
             <Button href={`tel:${BUSINESS.phone}`} variant="gold">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                 <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
@@ -64,7 +64,7 @@ export function HeroSection() {
             </Button>
           </div>
 
-          <div className="animate-fade-up [animation-delay:800ms] mt-8 flex items-center justify-center lg:justify-start gap-4 text-sm">
+          <div className="animate-fade-up [animation-delay:400ms] mt-8 flex items-center justify-center lg:justify-start gap-4 text-sm">
             <a href={`tel:${BUSINESS.phone}`} className="font-medium text-cream hover:text-gold-light transition-colors">
               {BUSINESS.phoneDisplay}
             </a>

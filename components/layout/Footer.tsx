@@ -39,7 +39,7 @@ export function Footer() {
                 <span className="font-heading text-xl font-bold text-white tracking-tight block">
                   Lala G
                 </span>
-                <span className="text-[10px] text-gold/80 tracking-[0.2em] uppercase">
+                <span className="text-xs text-gold/80 tracking-[0.2em] uppercase">
                   Timber Merchants
                 </span>
               </div>
@@ -55,12 +55,12 @@ export function Footer() {
           {/* Quick Links */}
           <div>
             <h3 className="text-xs font-semibold text-gold/80 tracking-widest uppercase mb-5">Products</h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-0.5">
               {quickLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/50 hover:text-gold transition-colors duration-200"
+                    className="text-sm text-white/60 hover:text-gold transition-colors duration-200 inline-flex items-center min-h-[44px]"
                   >
                     {link.label}
                   </Link>
@@ -72,12 +72,12 @@ export function Footer() {
           {/* Company */}
           <div>
             <h3 className="text-xs font-semibold text-gold/80 tracking-widest uppercase mb-5">Company</h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-0.5">
               {companyLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/50 hover:text-gold transition-colors duration-200"
+                    className="text-sm text-white/60 hover:text-gold transition-colors duration-200 inline-flex items-center min-h-[44px]"
                   >
                     {link.label}
                   </Link>
@@ -123,14 +123,14 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-14 pt-6 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-white/25">
+          <p className="text-sm text-white/50">
             &copy; {new Date().getFullYear()} {BUSINESS.name}. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            <Link href="/privacy" className="text-xs text-white/25 hover:text-white/50 transition-colors">
+          <div className="flex gap-6 items-center">
+            <Link href="/privacy" className="text-sm text-white/50 hover:text-gold transition-colors inline-flex items-center min-h-[44px]">
               Privacy
             </Link>
-            <Link href="/terms" className="text-xs text-white/25 hover:text-white/50 transition-colors">
+            <Link href="/terms" className="text-sm text-white/50 hover:text-gold transition-colors inline-flex items-center min-h-[44px]">
               Terms
             </Link>
           </div>
