@@ -5,6 +5,31 @@ import { BUSINESS, getWhatsAppUrl } from '@/lib/constants'
 import { TrustBadge } from '@/components/ui/TrustBadge'
 import { Button } from '@/components/ui/Button'
 
+const shortcuts = [
+  ...productCategories.map((product) => ({
+    key: product.slug,
+    title: product.title,
+    href: product.href,
+    detail: product.features.slice(0, 3).join(' \u00b7 '),
+    hot: Boolean(product.hot),
+  })),
+  {
+    key: 'partal-kail',
+    title: 'Partal / Kail',
+    href: '/products/timber#partal-kail',
+    detail: '8\u2032 & 12\u2032 Baala or Reep',
+    hot: true,
+  },
+]
+
+function HotBadge({ className = '' }: { className?: string }) {
+  return (
+    <span className={`rounded-full bg-gold px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-bark ${className}`}>
+      Hot
+    </span>
+  )
+}
+
 export function HeroSection() {
   return (
     <section className="relative min-h-[86svh] lg:min-h-screen flex items-center overflow-hidden">
@@ -77,32 +102,49 @@ export function HeroSection() {
             <span className="w-1 h-1 rounded-full bg-gold-light/40" />
             <span className="text-cream/60">Mon&ndash;Sat, {BUSINESS.hours.opens} &ndash; {BUSINESS.hours.closes}</span>
           </div>
+
+          {/* Same shortcuts on mobile, as a compact grid rather than a list —
+              a full-height panel would push the CTAs off the first screen. */}
+          <div className="lg:hidden animate-fade-up [animation-delay:500ms] mt-8 grid grid-cols-2 gap-2.5">
+            {shortcuts.map((item) => (
+              <Link
+                key={item.key}
+                href={item.href}
+                className="flex items-center justify-between gap-2 rounded-xl border border-white/15 bg-white/[0.06] backdrop-blur-md px-3.5 min-h-[52px] text-left hover:bg-white/[0.1] transition-colors"
+              >
+                <span className="text-sm font-semibold text-white leading-tight">
+                  {item.title}
+                </span>
+                {item.hot ? (
+                  <HotBadge className="shrink-0" />
+                ) : (
+                  <svg className="w-4 h-4 shrink-0 text-gold-light" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                )}
+              </Link>
+            ))}
+          </div>
         </div>
 
-          {/* Product shortcuts — fills the right half and gives the hero a
-              second job beyond the two CTAs. */}
+          {/* Product shortcuts — fills the right half on desktop and gives the
+              hero a second job beyond the two CTAs. */}
           <div className="hidden lg:block animate-fade-up [animation-delay:400ms]">
             <div className="rounded-2xl border border-white/15 bg-white/[0.06] backdrop-blur-md p-2">
-              {productCategories.map((product) => (
+              {shortcuts.map((item) => (
                 <Link
-                  key={product.slug}
-                  href={product.href}
+                  key={item.key}
+                  href={item.href}
                   className="group/item flex items-center justify-between gap-4 rounded-xl px-5 py-4 min-h-[44px] hover:bg-white/[0.07] transition-colors"
                 >
                   <span>
                     <span className="flex items-center gap-2">
                       <span className="font-heading text-lg font-semibold text-white">
-                        {product.title}
+                        {item.title}
                       </span>
-                      {product.hot && (
-                        <span className="rounded-full bg-gold px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-bark">
-                          Hot
-                        </span>
-                      )}
+                      {item.hot && <HotBadge />}
                     </span>
-                    <span className="block text-sm text-cream/60 mt-0.5">
-                      {product.features.slice(0, 3).join(' \u00b7 ')}
-                    </span>
+                    <span className="block text-sm text-cream/60 mt-0.5">{item.detail}</span>
                   </span>
                   <svg
                     className="w-5 h-5 shrink-0 text-gold-light transition-transform duration-300 group-hover/item:translate-x-1"
@@ -116,35 +158,6 @@ export function HeroSection() {
                   </svg>
                 </Link>
               ))}
-
-              <Link
-                href="/products/timber#partal-kail"
-                className="group/item flex items-center justify-between gap-4 rounded-xl px-5 py-4 min-h-[44px] hover:bg-white/[0.07] transition-colors"
-              >
-                <span>
-                  <span className="flex items-center gap-2">
-                    <span className="font-heading text-lg font-semibold text-white">
-                      Partal / Kail
-                    </span>
-                    <span className="rounded-full bg-gold px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-bark">
-                      Hot
-                    </span>
-                  </span>
-                  <span className="block text-sm text-cream/60 mt-0.5">
-                    8&#8242; &amp; 12&#8242; Baala or Reep
-                  </span>
-                </span>
-                <svg
-                  className="w-5 h-5 shrink-0 text-gold-light transition-transform duration-300 group-hover/item:translate-x-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
-              </Link>
             </div>
           </div>
         </div>
