@@ -40,6 +40,17 @@ export function Header() {
     setOpenMenu(null)
   }, [pathname])
 
+  // Escape has to be bound at the document: when the menu was opened by hover
+  // rather than focus, the key event never reaches the wrapper.
+  useEffect(() => {
+    if (!openMenu) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpenMenu(null)
+    }
+    document.addEventListener('keydown', onKey)
+    return () => document.removeEventListener('keydown', onKey)
+  }, [openMenu])
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12)
     onScroll()
