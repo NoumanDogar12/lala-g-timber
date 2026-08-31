@@ -26,8 +26,8 @@ export const productCategories: ProductCategory[] = [
       'Full range of plywood for every application — Marine, Commercial, Simbal, Solar and branded 16mm/18mm shuttering boards.',
     features: ['Duraplex', 'Korenplex', 'Greenplex', 'Marine', 'Simbal', 'Solar'],
     href: '/products/plywood',
-    image: '/images/plywood-stack-lahore.jpg',
-    imageAlt: 'Stacked plywood sheets ready for delivery in Lahore',
+    image: '/images/ply-solar.jpg',
+    imageAlt: 'Yard stacks of plywood sheets at Lala G Timber Merchant, Lahore',
   },
   {
     title: 'Shuttering Material',
@@ -36,8 +36,8 @@ export const productCategories: ProductCategory[] = [
       'Complete shuttering solutions — plywood sheets, steel props, centering plates, and accessories for construction projects.',
     features: ['Shuttering Ply', 'Phatta', 'Baala', 'Wali', 'Gola', 'Naala'],
     href: '/products/shuttering-material',
-    image: '/images/shuttering-baala-lahore.jpg',
-    imageAlt: 'Red film-faced shuttering plywood sheets in stock',
+    image: '/images/shuttering-plywood-lahore.jpg',
+    imageAlt: 'Film-coated shuttering plywood sheet in stock in Lahore',
   },
 ]
 
