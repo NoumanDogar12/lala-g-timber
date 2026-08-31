@@ -10,9 +10,9 @@ import { JsonLd } from '@/components/seo/JsonLd'
 import { Button } from '@/components/ui/Button'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Best Timber & Wood Supplier in Lahore — Teak, Deodar, Sheesham, Pine, Sal',
+  title: 'Best Timber & Wood Supplier in Lahore — Deodar, Sheesham, Pine, Kikkar',
   description:
-    'Best timber and wood supplier in Lahore. Buy Teak, Deodar, Sheesham, Pine, Sal & Partal lakdi for construction, furniture & interior work. A-grade wood at best rates. Trusted timber merchant since 30+ years. Call for prices.',
+    'Best timber and wood supplier in Lahore. Buy Deodar, Sheesham, Pine, Kikkar, Partal & Sufaida lakdi for construction, furniture & interior work. A-grade wood at best rates. Trusted timber merchant since 30+ years. Call for prices.',
   path: '/products/timber',
 })
 
@@ -20,7 +20,7 @@ const timberFaqs = [
   {
     question: 'What types of timber are available in Lahore?',
     answer:
-      'We supply Teak (Sagwan), Sal, Deodar (Cedar), Pine (Chir), and Sheesham (Rosewood) in various grades and dimensions. Each wood type suits different applications from construction to furniture making.',
+      'We supply Deodar (Cedar), Pine (Chir), Sheesham (Rosewood), Kikkar (Keekar), Partal / Kail and Sufaida (Poplar) in various grades and dimensions. Each wood type suits different applications from construction to furniture making.',
   },
   {
     question: 'How do I choose the right timber grade?',
@@ -93,7 +93,7 @@ export default function TimberPage() {
           </h1>
           <p className="text-white/60 text-lg max-w-3xl mb-6">
             We supply A-grade and B-grade timber for construction, furniture, and interior
-            work. Teak, Sal, Deodar, Pine, and Sheesham available in all standard dimensions.
+            work. Deodar, Sheesham, Pine, Kikkar, Partal and Sufaida available in all standard dimensions.
           </p>
           <div className="flex flex-wrap gap-3">
             <Button href={`tel:${BUSINESS.phone}`} variant="gold">

@@ -27,7 +27,7 @@ const values = [
   },
   {
     title: 'Wide Selection',
-    description: 'From premium Teak to construction Pine, marine plywood to shuttering material — everything under one roof.',
+    description: 'From seasoned Sheesham to construction Pine, marine plywood to shuttering material — everything under one roof.',
   },
 ]
 

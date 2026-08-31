@@ -8,13 +8,13 @@ export const faqs: FAQ[] = [
   {
     question: 'What types of timber do you supply?',
     answer:
-      'We supply Teak (Sagwan), Sal, Deodar (Cedar), Pine (Chir), and Sheesham (Rosewood) in A-grade and B-grade. All timber is available in standard and custom dimensions for construction, furniture, and interior work.',
+      'We supply Deodar (Cedar), Pine (Chir), Sheesham (Rosewood), Kikkar (Keekar), Partal / Kail and Sufaida (Poplar) in A-grade and B-grade. All timber is available in standard and custom dimensions for construction, furniture, and interior work.',
     category: 'Products',
   },
   {
     question: 'What types of plywood are available?',
     answer:
-      'We stock Marine Plywood (BWP), BWR Plywood, Commercial Plywood (MR), Shuttering Plywood, MDF Board, and Block Board. Available in 8x4 and 7x4 feet sheets, thicknesses from 4mm to 25mm.',
+      'We stock Marine Plywood (BWP), Commercial Plywood, Shuttering Plywood in 16mm and 18mm — Duraplex, Korenplex, Smart, Greenplex, Kite and Royalplex — plus Simbal, Solar, High Pressure and imported boards. Available in 8x4 and 7x4 feet sheets.',
     category: 'Products',
   },
   {
@@ -60,9 +60,9 @@ export const faqs: FAQ[] = [
     category: 'General',
   },
   {
-    question: 'How do I choose between marine and BWR plywood?',
+    question: 'Which shuttering plywood brand should I choose?',
     answer:
-      'Marine plywood (BWP grade) is ideal for areas with heavy moisture like kitchens and bathrooms. BWR plywood handles moderate moisture and is more affordable — suitable for interior furniture and shelving.',
+      'We stock Duraplex, Korenplex, Smart, Greenplex, Kite and Royalplex shuttering plywood in 16mm and 18mm. 18mm is the standard for slabs and heavy pours; 16mm suits columns and lighter formwork. Call the shop for today\'s rate on any brand.',
     category: 'Products',
   },
   {

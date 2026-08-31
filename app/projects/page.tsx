@@ -15,8 +15,8 @@ export const metadata: Metadata = createMetadata({
 const projects = [
   {
     title: 'Residential Villa — DHA Phase 6',
-    description: 'Complete timber supply for a 10-marla villa including Deodar roof framing, Teak door frames, and marine plywood for kitchen and bathrooms.',
-    materials: ['Deodar Timber', 'Teak Wood', 'Marine Plywood'],
+    description: 'Complete timber supply for a 10-marla villa including Deodar roof framing, Sheesham door frames, and marine plywood for kitchen and bathrooms.',
+    materials: ['Deodar Timber', 'Sheesham', 'Marine Plywood'],
     type: 'Residential',
   },
   {
@@ -27,8 +27,8 @@ const projects = [
   },
   {
     title: 'Furniture Workshop — Johar Town',
-    description: 'Bulk supply of Sheesham and Teak timber for a premium furniture workshop. Regular monthly deliveries of A-grade furniture timber.',
-    materials: ['Sheesham', 'Teak', 'BWR Plywood'],
+    description: 'Bulk supply of Sheesham and Deodar timber for a premium furniture workshop. Regular monthly deliveries of A-grade furniture timber.',
+    materials: ['Sheesham', 'Deodar', 'Commercial Plywood'],
     type: 'Furniture',
   },
   {
@@ -45,8 +45,8 @@ const projects = [
   },
   {
     title: 'Interior Renovation — Cantt',
-    description: 'Premium Teak paneling, marine plywood cabinets, and Block Board partitions for a home renovation project in Lahore Cantt.',
-    materials: ['Teak', 'Marine Plywood', 'Block Board'],
+    description: 'Premium Sheesham paneling, marine plywood cabinets, and shuttering ply partitions for a home renovation project in Lahore Cantt.',
+    materials: ['Sheesham', 'Marine Plywood', 'Shuttering Plywood'],
     type: 'Residential',
   },
 ]

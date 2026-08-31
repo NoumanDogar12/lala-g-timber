@@ -13,8 +13,8 @@ export const productCategories: ProductCategory[] = [
     title: 'Timber',
     slug: 'timber',
     description:
-      'Premium construction and furniture timber including Teak, Sal, Deodar, Pine, and Sheesham in all grades and dimensions.',
-    features: ['Teak', 'Deodar', 'Sheesham', 'Kikkar', 'Partal / Kail', 'Sufaida'],
+      'Premium construction and furniture timber including Deodar, Pine, Sheesham, Kikkar and Partal in all grades and dimensions.',
+    features: ['Deodar', 'Sheesham', 'Kikkar', 'Partal / Kail', 'Sufaida', 'Pine'],
     href: '/products/timber',
     image: '/images/timber-planks-lahore.jpg',
     imageAlt: 'Sawn timber planks stacked at Lala G Timber Merchant in Lahore',
@@ -23,8 +23,8 @@ export const productCategories: ProductCategory[] = [
     title: 'Plywood',
     slug: 'plywood',
     description:
-      'Full range of plywood for every application — Marine, BWR, Commercial, Shuttering Plywood, MDF, and Block Board.',
-    features: ['Marine', 'BWR Grade', 'Simbal', 'Solar', 'High Pressure', 'Imported'],
+      'Full range of plywood for every application — Marine, Commercial, Simbal, Solar and branded 16mm/18mm shuttering boards.',
+    features: ['Duraplex', 'Korenplex', 'Greenplex', 'Marine', 'Simbal', 'Solar'],
     href: '/products/plywood',
     image: '/images/plywood-sheets-lahore.jpg',
     imageAlt: 'Stacked plywood sheets ready for delivery in Lahore',
@@ -49,20 +49,6 @@ export interface TimberType {
 }
 
 export const timberTypes: TimberType[] = [
-  {
-    name: 'Teak (Sagwan)',
-    description:
-      'Premium hardwood known for exceptional durability and natural resistance to moisture, termites, and rot. The gold standard for high-end furniture and outdoor applications.',
-    uses: ['Premium furniture', 'Outdoor decking', 'Door & window frames', 'Boat building'],
-    grades: ['A Grade', 'B Grade'],
-  },
-  {
-    name: 'Sal',
-    description:
-      'Heavy-duty hardwood ideal for structural applications. Extremely dense and strong, making it perfect for load-bearing construction work.',
-    uses: ['Structural beams', 'Railway sleepers', 'Heavy construction', 'Flooring'],
-    grades: ['A Grade', 'B Grade'],
-  },
   {
     name: 'Deodar (Cedar)',
     description:
@@ -139,14 +125,6 @@ export const plywoodTypes: PlywoodType[] = [
     bestUse: 'Kitchens, bathrooms, exterior use',
   },
   {
-    name: 'BWR Plywood',
-    description:
-      'Boiling Water Resistant plywood suitable for areas with moderate moisture. A cost-effective alternative to marine ply.',
-    waterResistance: 'Good (BWR)',
-    priceRange: '$$$',
-    bestUse: 'Interior furniture, shelving, partitions',
-  },
-  {
     name: 'Commercial Plywood',
     description:
       'Standard grade plywood for interior applications. Best for dry conditions where moisture exposure is minimal.',
@@ -161,22 +139,6 @@ export const plywoodTypes: PlywoodType[] = [
     waterResistance: 'Good',
     priceRange: '$$$',
     bestUse: 'Concrete shuttering, formwork',
-  },
-  {
-    name: 'MDF Board',
-    description:
-      'Medium Density Fiberboard with smooth, uniform surface. Perfect for painting, laminating, and precision cutting.',
-    waterResistance: 'Low',
-    priceRange: '$$',
-    bestUse: 'Modular furniture, cabinets, CNC cutting',
-  },
-  {
-    name: 'Block Board',
-    description:
-      'Core made of softwood strips with veneer facing. Lightweight yet strong, ideal for large panel applications.',
-    waterResistance: 'Moderate',
-    priceRange: '$$',
-    bestUse: 'Large doors, tables, long shelves, partitions',
   },
   {
     name: 'Simbal Plywood',
@@ -209,5 +171,53 @@ export const plywoodTypes: PlywoodType[] = [
     waterResistance: 'Varies by grade',
     priceRange: 'By weight',
     bestUse: 'Specification-driven and specialist projects',
+  },
+  {
+    name: 'Duraplex Shuttering Plywood',
+    description:
+      'Film-faced shuttering plywood stocked in 16mm and 18mm for slab, column and beam formwork.',
+    waterResistance: 'Film-faced',
+    priceRange: 'Call for rate',
+    bestUse: '16mm for columns and lighter formwork, 18mm for slabs and repeated pours',
+  },
+  {
+    name: 'Korenplex Shuttering Plywood',
+    description:
+      'Film-faced shuttering plywood stocked in 16mm and 18mm for slab, column and beam formwork.',
+    waterResistance: 'Film-faced',
+    priceRange: 'Call for rate',
+    bestUse: '16mm for columns and lighter formwork, 18mm for slabs and repeated pours',
+  },
+  {
+    name: 'Smart Shuttering Plywood',
+    description:
+      'Film-faced shuttering plywood stocked in 16mm and 18mm for slab, column and beam formwork.',
+    waterResistance: 'Film-faced',
+    priceRange: 'Call for rate',
+    bestUse: '16mm for columns and lighter formwork, 18mm for slabs and repeated pours',
+  },
+  {
+    name: 'Greenplex Shuttering Plywood',
+    description:
+      'Film-faced shuttering plywood stocked in 16mm and 18mm for slab, column and beam formwork.',
+    waterResistance: 'Film-faced',
+    priceRange: 'Call for rate',
+    bestUse: '16mm for columns and lighter formwork, 18mm for slabs and repeated pours',
+  },
+  {
+    name: 'Kite Shuttering Plywood',
+    description:
+      'Film-faced shuttering plywood stocked in 16mm and 18mm for slab, column and beam formwork.',
+    waterResistance: 'Film-faced',
+    priceRange: 'Call for rate',
+    bestUse: '16mm for columns and lighter formwork, 18mm for slabs and repeated pours',
+  },
+  {
+    name: 'Royalplex Shuttering Plywood',
+    description:
+      'Film-faced shuttering plywood stocked in 16mm and 18mm for slab, column and beam formwork.',
+    waterResistance: 'Film-faced',
+    priceRange: 'Call for rate',
+    bestUse: '16mm for columns and lighter formwork, 18mm for slabs and repeated pours',
   },
 ]

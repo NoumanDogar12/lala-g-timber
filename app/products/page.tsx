@@ -10,7 +10,7 @@ import { BUSINESS } from '@/lib/constants'
 export const metadata: Metadata = createMetadata({
   title: 'Timber, Plywood, Wood & Shuttering Material — Construction Products in Lahore',
   description:
-    'Browse our complete range of timber, plywood, wood, and shuttering material in Lahore. Lakdi, phatta, ply, wali — all construction material available. Marine plywood, BWR plywood, Teak, Deodar & more from best wood supplier.',
+    'Browse our complete range of timber, plywood, wood, and shuttering material in Lahore. Lakdi, phatta, ply, wali — all construction material available. Marine plywood, shuttering plywood, Deodar, Sheesham & more from best wood supplier.',
   path: '/products',
 })
 

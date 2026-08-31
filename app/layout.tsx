@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: `%s | ${BUSINESS.name}`,
   },
   description:
-    'Best timber, plywood & shuttering material supplier in Lahore. Lakdi, phatta, wali, ply — all construction wood available. 30+ year trusted wood merchant. Marine plywood, Teak, Deodar, Sheesham & more. Call for today\'s rates.',
+    'Best timber, plywood & shuttering material supplier in Lahore. Lakdi, phatta, wali, ply — all construction wood available. 30+ year trusted wood merchant. Marine plywood, Deodar, Sheesham, Kikkar & more. Call for today\'s rates.',
   keywords: [
     'timber supplier Lahore',
     'wood supplier Lahore',

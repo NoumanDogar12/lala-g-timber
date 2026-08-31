@@ -9,22 +9,22 @@ import { JsonLd } from '@/components/seo/JsonLd'
 import { Button } from '@/components/ui/Button'
 
 export const metadata: Metadata = createMetadata({
-  title: 'Best Plywood & Ply Supplier in Lahore — Marine, BWR, Commercial Phatta',
+  title: 'Best Plywood & Ply Supplier in Lahore — Marine, Shuttering, Commercial Phatta',
   description:
-    'Buy marine plywood, BWR plywood, commercial ply, MDF & block board in Lahore. Phatta, ply sheet — all sizes available. Best plywood rates from trusted 30+ year wood supplier. Call for today\'s price.',
+    'Buy marine plywood, shuttering plywood, commercial ply, Duraplex & Korenplex in Lahore. Phatta, ply sheet — all sizes available. Best plywood rates from trusted 30+ year wood supplier. Call for today\'s price.',
   path: '/products/plywood',
 })
 
 const plywoodFaqs = [
   {
-    question: 'What is the difference between marine and BWR plywood?',
+    question: 'Which shuttering plywood brands do you stock?',
     answer:
-      'Marine plywood uses BWP (Boiling Water Proof) grade adhesive and can withstand prolonged water exposure — ideal for kitchens and bathrooms. BWR (Boiling Water Resistant) plywood handles moderate moisture but is more affordable, suitable for interior furniture.',
+      'We carry Duraplex, Korenplex, Smart, Greenplex, Kite and Royalplex shuttering plywood, each available in 16mm and 18mm. 18mm is the usual choice for slabs and repeated pours, 16mm for columns and lighter formwork.',
   },
   {
     question: 'Which plywood is best for kitchen cabinets?',
     answer:
-      'Marine plywood or BWR plywood are recommended for kitchen cabinets due to moisture resistance. Marine ply is the premium choice, while BWR offers good protection at a lower price point.',
+      'Marine plywood is the recommended choice for kitchen cabinets thanks to its BWP-grade moisture resistance. Commercial plywood is a more economical option for dry interior areas.',
   },
   {
     question: 'What sizes of plywood are available?',
@@ -83,8 +83,8 @@ export default function PlywoodPage() {
             Plywood Supplier in Lahore
           </h1>
           <p className="text-white/60 text-lg max-w-3xl mb-6">
-            Complete range of plywood for every application — Marine, BWR, Commercial,
-            Shuttering, MDF, and Block Board. All thicknesses and sizes available.
+            Complete range of plywood for every application — Marine, Commercial,
+            Shuttering and branded 16mm/18mm boards. All thicknesses and sizes available.
           </p>
           <div className="flex flex-wrap gap-3">
             <Button href={`tel:${BUSINESS.phone}`} variant="gold">
