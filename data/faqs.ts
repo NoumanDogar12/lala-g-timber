@@ -36,9 +36,9 @@ export const faqs: FAQ[] = [
     category: 'Pricing',
   },
   {
-    question: 'Do you deliver across Lahore?',
+    question: 'Do you deliver across Lahore and the rest of Pakistan?',
     answer:
-      'Yes, we deliver to 50+ areas across Lahore including DHA, Gulberg, Johar Town, Model Town, Cantt, and surrounding industrial areas. Same-day delivery available for in-stock items.',
+      'Yes. We deliver to 50+ areas across Lahore including DHA, Gulberg, Johar Town, Model Town, Cantt, and surrounding industrial areas, with same-day delivery on in-stock items. We also dispatch bulk orders nationwide across Pakistan.',
     category: 'Delivery',
   },
   {

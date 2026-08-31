@@ -115,13 +115,22 @@ export default function TimberPage() {
 
           <div className="space-y-8">
             {timberTypes.map((timber) => (
-              <div key={timber.name} className="bg-white rounded-2xl border border-cream-dark/30 p-6 lg:p-8 card-hover">
+              <div
+                key={timber.name}
+                id={timber.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}
+                className="scroll-mt-32 bg-white rounded-2xl border border-cream-dark/30 p-6 lg:p-8 card-hover"
+              >
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-3">
                       <h3 className="font-heading text-xl font-semibold text-wood">
                         {timber.name}
                       </h3>
+                      {timber.hot && (
+                        <span className="rounded-full bg-gold px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wider text-bark">
+                          Hot
+                        </span>
+                      )}
                       <CallForRatesBadge />
                     </div>
                     <p className="text-text-muted text-sm leading-relaxed mb-4">

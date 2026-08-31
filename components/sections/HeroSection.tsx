@@ -90,8 +90,15 @@ export function HeroSection() {
                   className="group/item flex items-center justify-between gap-4 rounded-xl px-5 py-4 min-h-[44px] hover:bg-white/[0.07] transition-colors"
                 >
                   <span>
-                    <span className="block font-heading text-lg font-semibold text-white">
-                      {product.title}
+                    <span className="flex items-center gap-2">
+                      <span className="font-heading text-lg font-semibold text-white">
+                        {product.title}
+                      </span>
+                      {product.hot && (
+                        <span className="rounded-full bg-gold px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-bark">
+                          Hot
+                        </span>
+                      )}
                     </span>
                     <span className="block text-sm text-cream/60 mt-0.5">
                       {product.features.slice(0, 3).join(' \u00b7 ')}
@@ -109,6 +116,35 @@ export function HeroSection() {
                   </svg>
                 </Link>
               ))}
+
+              <Link
+                href="/products/timber#partal-kail"
+                className="group/item flex items-center justify-between gap-4 rounded-xl px-5 py-4 min-h-[44px] hover:bg-white/[0.07] transition-colors"
+              >
+                <span>
+                  <span className="flex items-center gap-2">
+                    <span className="font-heading text-lg font-semibold text-white">
+                      Partal / Kail
+                    </span>
+                    <span className="rounded-full bg-gold px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-bark">
+                      Hot
+                    </span>
+                  </span>
+                  <span className="block text-sm text-cream/60 mt-0.5">
+                    8&#8242; &amp; 12&#8242; Baala or Reep
+                  </span>
+                </span>
+                <svg
+                  className="w-5 h-5 shrink-0 text-gold-light transition-transform duration-300 group-hover/item:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </Link>
             </div>
           </div>
         </div>

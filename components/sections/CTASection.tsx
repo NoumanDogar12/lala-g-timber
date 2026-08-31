@@ -31,7 +31,7 @@ export function CTASection() {
         </h2>
         <p className="text-cream/70 text-lg mb-10 max-w-2xl mx-auto">
           Get today&apos;s best rates on timber, plywood, and shuttering material.
-          Free delivery across Lahore for bulk orders.
+          Free delivery across Lahore and bulk dispatch nationwide across Pakistan.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

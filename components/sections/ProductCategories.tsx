@@ -26,6 +26,7 @@ export function ProductCategories() {
               description={product.description}
               features={product.features}
               href={product.href}
+              hot={product.hot}
               image={product.image}
               imageAlt={product.imageAlt}
               priority={i === 0}

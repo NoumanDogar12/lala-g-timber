@@ -10,6 +10,7 @@ interface ProductCardProps {
   image: string
   imageAlt: string
   priority?: boolean
+  hot?: boolean
 }
 
 export function ProductCard({
@@ -20,6 +21,7 @@ export function ProductCard({
   image,
   imageAlt,
   priority = false,
+  hot = false,
 }: ProductCardProps) {
   return (
     <div className="group bg-white rounded-2xl border border-cream-dark/30 overflow-hidden card-hover flex flex-col">
@@ -35,6 +37,11 @@ export function ProductCard({
           quality={78}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-bark/85 via-bark/25 to-transparent" />
+        {hot && (
+          <span className="absolute top-4 right-4 inline-flex items-center gap-1 rounded-full bg-gold px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-bark">
+            Hot
+          </span>
+        )}
         <h3 className="absolute bottom-4 left-5 right-5 font-heading text-2xl font-bold text-white drop-shadow-sm">
           {title}
         </h3>

@@ -30,6 +30,7 @@ export const NAV_LINKS = [
   { label: 'Home', href: '/' },
   { label: 'Products', href: '/products', children: [
     { label: 'Timber', href: '/products/timber' },
+    { label: 'Partal / Kail', href: '/products/timber#partal-kail' },
     { label: 'Plywood', href: '/products/plywood' },
     { label: 'Shuttering Material', href: '/products/shuttering-material' },
   ]},

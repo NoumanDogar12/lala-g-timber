@@ -1,6 +1,8 @@
 export interface ProductCategory {
   title: string
   slug: string
+  /** Surfaced with a "Hot" badge across the site. */
+  hot?: boolean
   description: string
   features: string[]
   href: string
@@ -13,8 +15,8 @@ export const productCategories: ProductCategory[] = [
     title: 'Timber',
     slug: 'timber',
     description:
-      'Premium construction and furniture timber including Deodar, Pine, Sheesham, Kikkar and Partal in all grades and dimensions.',
-    features: ['Deodar', 'Sheesham', 'Kikkar', 'Partal / Kail', 'Sufaida', 'Pine'],
+      'Premium construction and furniture timber — Partal / Kail, Deodar, Sheesham, Kikkar and Sufaida in all grades and dimensions.',
+    features: ['Partal / Kail', 'Deodar', 'Sheesham', 'Kikkar', 'Sufaida'],
     href: '/products/timber',
     image: '/images/timber-sawn-lahore.jpg',
     imageAlt: 'Sawn timber planks stacked at Lala G Timber Merchant in Lahore',
@@ -22,6 +24,7 @@ export const productCategories: ProductCategory[] = [
   {
     title: 'Plywood',
     slug: 'plywood',
+    hot: true,
     description:
       'Full range of plywood for every application — Marine, Commercial, Simbal, Solar and branded 16mm/18mm shuttering boards.',
     features: ['Duraplex', 'Korenplex', 'Greenplex', 'Marine', 'Simbal', 'Solar'],
@@ -43,12 +46,22 @@ export const productCategories: ProductCategory[] = [
 
 export interface TimberType {
   name: string
+  /** Surfaced with a "Hot" badge across the site. */
+  hot?: boolean
   description: string
   uses: string[]
   grades: string[]
 }
 
 export const timberTypes: TimberType[] = [
+  {
+    name: 'Partal / Kail',
+    hot: true,
+    description:
+      'Light, straight-grained softwood stocked as baala and reep for roofing and shuttering support. Easy to work and economical for temporary structures.',
+    uses: ['Roofing support', 'Shuttering framing', 'Temporary structures', 'Pallets'],
+    grades: ['8\u2032 Baala / Reep', '12\u2032 Baala / Reep'],
+  },
   {
     name: 'Deodar (Cedar)',
     description:
@@ -76,13 +89,6 @@ export const timberTypes: TimberType[] = [
       'Local acacia and the densest wood in regular trade. Takes nails without splitting, carries load without complaint, and handles Lahore\u2019s humidity swings better than imported softwood \u2014 the default for battens, supports and bed frames.',
     uses: ['Battens & supports', 'Bed frames', 'Shuttering props', 'Packing wood'],
     grades: ['32 Lar Bundle', '24 Lar Bundle', '20 Lar Bundle', 'Bed Lar'],
-  },
-  {
-    name: 'Partal / Kail',
-    description:
-      'Light, straight-grained softwood stocked as baala and reep for roofing and shuttering support. Easy to work and economical for temporary structures.',
-    uses: ['Roofing support', 'Shuttering framing', 'Temporary structures', 'Pallets'],
-    grades: ['8\u2032 Baala / Reep', '12\u2032 Baala / Reep'],
   },
   {
     name: 'Sufaida (Poplar)',

@@ -17,14 +17,14 @@ const priceCategories = [
   {
     title: 'Timber',
     items: [
+      { name: 'Partal / Kail — 8\u2032 Baala or Reep', unit: 'per piece' },
+      { name: 'Partal / Kail — 12\u2032 Baala or Reep', unit: 'per piece' },
       { name: 'Deodar — A Grade', unit: 'per cubic ft' },
       { name: 'Deodar — B Grade', unit: 'per cubic ft' },
       { name: 'Pine (Chir) — A Grade', unit: 'per cubic ft' },
       { name: 'Sheesham — A Grade', unit: 'per cubic ft' },
       { name: 'Sufaida (Poplar)', unit: 'per cubic ft' },
       { name: 'Kikkar (Keekar) — Seasoned', unit: 'per cubic ft' },
-      { name: 'Partal / Kail — 8\u2032 Baala or Reep', unit: 'per piece' },
-      { name: 'Partal / Kail — 12\u2032 Baala or Reep', unit: 'per piece' },
       { name: 'Yellow Pine', unit: 'per cubic ft' },
       { name: 'Ash Wood', unit: 'per cubic ft' },
     ],
