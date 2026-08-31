@@ -80,7 +80,7 @@ export default function PriceListPage() {
               <Button href={`tel:${BUSINESS.phone}`} variant="primary">
                 Call for Today&apos;s Rates
               </Button>
-              <Button href={getWhatsAppUrl('Hi, can you share today\'s price list for timber and plywood?')} variant="outline">
+              <Button href={getWhatsAppUrl('Hi, can you share today\'s price list for timber and plywood?')} variant="secondary">
                 WhatsApp Price List
               </Button>
             </div>

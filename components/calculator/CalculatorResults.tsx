@@ -37,7 +37,7 @@ export function CalculatorResults({ result }: { result: CalculatorResult }) {
         <Button href={`tel:${BUSINESS.phone}`} variant="primary">
           Get Exact Rates
         </Button>
-        <Button href={getWhatsAppUrl(whatsappMessage)} variant="outline">
+        <Button href={getWhatsAppUrl(whatsappMessage)} variant="secondary">
           Share on WhatsApp
         </Button>
       </div>
