@@ -34,7 +34,7 @@ export function Breadcrumbs() {
   })
 
   return (
-    <nav aria-label="Breadcrumb" className="border-b border-black/[0.04] bg-bg">
+    <nav aria-label="Breadcrumb" className="border-b border-black/[0.04] bg-bg pt-20 lg:pt-[84px]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1">
         <ol className="flex flex-wrap items-center gap-1.5 text-sm text-text-muted">
           <li>
