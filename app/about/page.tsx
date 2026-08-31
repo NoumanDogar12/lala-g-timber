@@ -124,7 +124,7 @@ export default function AboutPage() {
           <p className="mt-4">
             <a
               href={`tel:${BUSINESS.phone}`}
-              className="text-wood font-semibold hover:text-gold-dark transition-colors"
+              className="text-wood font-semibold hover:text-gold-dark transition-colors inline-flex items-center min-h-[44px]"
             >
               {BUSINESS.phoneDisplay}
             </a>

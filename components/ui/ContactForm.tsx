@@ -130,7 +130,7 @@ export function ContactForm() {
           required
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-          className="w-full px-4 py-2.5 rounded-lg border border-cream-dark/30 bg-white text-text text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
+          className="w-full px-4 py-3 rounded-lg border border-cream-dark/30 bg-white text-text text-base sm:text-sm min-h-[44px] focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
           placeholder="Muhammad Ali"
         />
       </div>
@@ -145,7 +145,7 @@ export function ContactForm() {
           required
           value={formData.phone}
           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-          className="w-full px-4 py-2.5 rounded-lg border border-cream-dark/30 bg-white text-text text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
+          className="w-full px-4 py-3 rounded-lg border border-cream-dark/30 bg-white text-text text-base sm:text-sm min-h-[44px] focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
           placeholder="0300 1234567"
         />
       </div>
@@ -159,7 +159,7 @@ export function ContactForm() {
           required
           value={formData.material}
           onChange={(e) => setFormData({ ...formData, material: e.target.value })}
-          className="w-full px-4 py-2.5 rounded-lg border border-cream-dark/30 bg-white text-text text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
+          className="w-full px-4 py-3 rounded-lg border border-cream-dark/30 bg-white text-text text-base sm:text-sm min-h-[44px] focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
         >
           <option value="">Select material type</option>
           <option value="timber">Timber</option>
@@ -179,7 +179,7 @@ export function ContactForm() {
           rows={3}
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          className="w-full px-4 py-2.5 rounded-lg border border-cream-dark/30 bg-white text-text text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold resize-none"
+          className="w-full px-4 py-3 rounded-lg border border-cream-dark/30 bg-white text-text text-base sm:text-sm min-h-[44px] focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold resize-none"
           placeholder="Tell us about your project requirements..."
         />
       </div>

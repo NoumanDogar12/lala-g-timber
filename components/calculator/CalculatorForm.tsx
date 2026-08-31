@@ -92,7 +92,7 @@ export function CalculatorForm() {
               min="0.1"
               step="0.1"
               required
-              className="w-full px-4 py-2.5 rounded-lg border border-black/[0.08] bg-white text-text text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
+              className="w-full px-4 py-3 rounded-lg border border-black/[0.08] bg-white text-text text-base sm:text-sm min-h-[44px] focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
               placeholder="e.g., 20"
             />
           </div>
@@ -108,7 +108,7 @@ export function CalculatorForm() {
               min="0.1"
               step="0.1"
               required
-              className="w-full px-4 py-2.5 rounded-lg border border-black/[0.08] bg-white text-text text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
+              className="w-full px-4 py-3 rounded-lg border border-black/[0.08] bg-white text-text text-base sm:text-sm min-h-[44px] focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
               placeholder="e.g., 15"
             />
           </div>
@@ -125,7 +125,7 @@ export function CalculatorForm() {
                 min="0.1"
                 step="0.1"
                 required
-                className="w-full px-4 py-2.5 rounded-lg border border-black/[0.08] bg-white text-text text-sm focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
+                className="w-full px-4 py-3 rounded-lg border border-black/[0.08] bg-white text-text text-base sm:text-sm min-h-[44px] focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold"
                 placeholder="e.g., 10"
               />
             </div>

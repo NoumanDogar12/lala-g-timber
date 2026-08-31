@@ -60,7 +60,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/60 hover:text-gold transition-colors duration-200 inline-flex items-center min-h-[44px]"
+                    className="text-sm text-white/60 hover:text-gold transition-colors duration-200 flex items-center min-h-[44px] w-full"
                   >
                     {link.label}
                   </Link>
@@ -77,7 +77,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/60 hover:text-gold transition-colors duration-200 inline-flex items-center min-h-[44px]"
+                    className="text-sm text-white/60 hover:text-gold transition-colors duration-200 flex items-center min-h-[44px] w-full"
                   >
                     {link.label}
                   </Link>
@@ -127,10 +127,10 @@ export function Footer() {
             &copy; {new Date().getFullYear()} {BUSINESS.name}. All rights reserved.
           </p>
           <div className="flex gap-6 items-center">
-            <Link href="/privacy" className="text-sm text-white/50 hover:text-gold transition-colors inline-flex items-center min-h-[44px]">
+            <Link href="/privacy" className="text-sm text-white/50 hover:text-gold transition-colors inline-flex items-center justify-center min-h-[44px] min-w-[44px]">
               Privacy
             </Link>
-            <Link href="/terms" className="text-sm text-white/50 hover:text-gold transition-colors inline-flex items-center min-h-[44px]">
+            <Link href="/terms" className="text-sm text-white/50 hover:text-gold transition-colors inline-flex items-center justify-center min-h-[44px] min-w-[44px]">
               Terms
             </Link>
           </div>
